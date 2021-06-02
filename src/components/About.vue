@@ -1,5 +1,4 @@
- <template> 
-
+<template> 
     <div>
         <div class="holoContainerLayover"></div>
         <div class="holoContainer">

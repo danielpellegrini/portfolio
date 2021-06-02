@@ -1,16 +1,17 @@
 <template>
   <div class="main-container">
-    <div class="layover">
-      <b-nav align="center">
-          <b-nav-item class="glitch" data-text="Home">Home</b-nav-item>
-          <b-nav-item @click="goToIndex(0)" class="glitch-2 current" data-text="About">About</b-nav-item>
-          <b-nav-item @click="goToIndex(1)" class="glitch-3 current" data-text="Projects">Projects</b-nav-item>
-          <b-nav-item @click="goToIndex(2)" class="glitch-4" data-text="Contacts">Contacts</b-nav-item>
-      </b-nav> 
+
+    <div class="layover">      
+      <b-nav align="center" >
+        <b-nav-item class="glitch">Home</b-nav-item>
+        <b-nav-item v-for="(link, index) in navlinks" :key="link" @click="goToIndex(index)" :class="(activeIndex(index))">
+          {{link}}
+        </b-nav-item>
+      </b-nav>
     </div> 
 
-    <carousel-3d ref="mycarousel" :width="500" :height="700">
-      <slide :index="0">
+    <carousel-3d ref="mycarousel" @before-slide-change="goToIndex" :width="500" :height="700">
+      <slide :index="0" >
         <About/>
       </slide>
       <slide :index="1">
@@ -21,8 +22,7 @@
       </slide>
     </carousel-3d>
 
-  </div>
-  
+  </div>  
 </template>
 
 <script>
@@ -31,6 +31,17 @@ import Projects from './Projects'
 import Contacts from './Contacts'
 
 export default {
+  data () {
+    return { 
+      navlinks: [
+        'About',
+        'Projects',
+        'Contacts'
+      ],    
+      linksIndex: 0,
+      active: true   
+    }
+  },
   name: 'Home',
   components: {
     About,
@@ -40,6 +51,14 @@ export default {
   methods: {
     goToIndex(index) {
       this.$refs.mycarousel.goSlide(index)
+      this.linksIndex = index
+    },
+    activeIndex(index) {
+      if (index !== this.linksIndex) {
+        return ''
+      }  else {
+        return 'highlight'
+      }
     }
   }
 }

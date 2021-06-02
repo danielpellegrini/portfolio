@@ -2,10 +2,10 @@ import Vue from 'vue'
 import App from './App.vue'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import Carousel3d from 'vue-carousel-3d';
-import VueRouter from 'vue-router'
 
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+import router from './router'
 
 // Make BootstrapVue available throughout your project
 Vue.use(BootstrapVue)
@@ -13,11 +13,10 @@ Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
 // Carousel 3d
 Vue.use(Carousel3d);
-// Vue route
-Vue.use(VueRouter)
 
 Vue.config.productionTip = false
 
 new Vue({
-  render: h => h(App),
+  router,
+  render: h => h(App)
 }).$mount('#app')

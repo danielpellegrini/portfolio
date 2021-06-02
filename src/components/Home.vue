@@ -1,10 +1,15 @@
 <template>
   <div class="main-container">
     <div class="layover">
-      <Navigation/>
+      <b-nav align="center">
+          <b-nav-item class="glitch" data-text="Home">Home</b-nav-item>
+          <b-nav-item @click="goToIndex(0)" class="glitch-2 current" data-text="About">About</b-nav-item>
+          <b-nav-item @click="goToIndex(1)" class="glitch-3 current" data-text="Projects">Projects</b-nav-item>
+          <b-nav-item @click="goToIndex(2)" class="glitch-4" data-text="Contacts">Contacts</b-nav-item>
+      </b-nav> 
     </div> 
 
-    <carousel-3d :width="500" :height="700">
+    <carousel-3d ref="mycarousel" :width="500" :height="700">
       <slide :index="0">
         <About/>
       </slide>
@@ -21,23 +26,21 @@
 </template>
 
 <script>
-import Navigation from './Navigation'
 import About from './About'
 import Projects from './Projects'
 import Contacts from './Contacts'
-import { Carousel3d, Slide } from 'vue-carousel-3d';
+
 export default {
   name: 'Home',
   components: {
-    Navigation,
     About,
     Projects,
-    Contacts,
-    Carousel3d,
-    Slide
+    Contacts
   },
-  props: {
-
+  methods: {
+    goToIndex(index) {
+      this.$refs.mycarousel.goSlide(index)
+    }
   }
 }
 </script>

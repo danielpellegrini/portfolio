@@ -1,0 +1,64 @@
+
+.nav-item a {
+    color: magenta;
+    margin-right: 40px;
+    font-size: 1.5em;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 768px) {  
+  .nav-item a {
+    color: magenta;
+    margin-right: 0;
+    font-size: 1em;
+  }    
+}  
+
+@media screen and (max-width: 375px) {  
+  .nav-item a{
+    color: magenta;
+    margin-right: 0;
+    margin-top: 10px;
+    font-size: .7em;
+  }    
+}
+
+
+// GLITCH ANIMATIONS
+.glitch {
+  position: relative;
+  animation: glitch 4s 4s infinite;  
+}
+
+//about
+.glitch-2 {
+  position: relative;
+  animation: glitch 6s 6s infinite;
+}
+
+//projects
+.glitch-3 {
+  position: relative;
+  animation: glitch 5s 5s infinite;
+}
+
+//contacts
+.glitch-4 {
+  position: relative;
+  animation: glitch 7s 7s infinite;
+}
+
+@keyframes glitch {
+  1%{
+    transform: rotateX(10deg) skewX(90deg);
+  }
+  2%{
+    transform: rotateX(0deg) skewX(0deg);
+  }
+}
+
+
+
+
+
+

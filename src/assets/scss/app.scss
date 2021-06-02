@@ -1,0 +1,50 @@
+@import './partials/_nav.scss';
+@import './partials/_holoCards.scss';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+    font-style: italic;
+    text-decoration: none;
+
+    .main-container {
+        overflow-x: hidden;
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        // background-image: url(./assets/img/aboutMe.gif);
+        background-image: url(./assets/img/mainBackground.gif);
+        image-rendering: pixelated;
+        background-repeat: no-repeat;
+        background-size: cover;
+        .layover{
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    }
+    @media screen and (min-width: 375px) {
+        background-position: center;
+    }
+
+    .carousel-3d-container {
+        position: absolute !important;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    
+        .carousel-3d-slide{
+            background: none;
+        }
+        
+
+        
+    }
+  
+    
+
+
+}

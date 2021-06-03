@@ -22,7 +22,7 @@
         .layover{
             width: 100vw;
             height: 100vh;
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: rgba(0, 0, 0, 0.4);
         }
     }
     @media screen and (min-width: 375px) {
@@ -34,7 +34,6 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-
     
         .carousel-3d-slide{
             background: none;

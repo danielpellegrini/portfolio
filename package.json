@@ -1,7 +1,7 @@
 {
   "name": "vue-portfolio",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -23,7 +23,6 @@
     "eslint-plugin-vue": "^6.2.2",
     "node-sass": "^5.0.0",
     "sass-loader": "^10.2.0",
-    "vue-cli-plugin-route": "~0.0.7",
     "vue-loader": "^15.9.7",
     "vue-template-compiler": "^2.6.12"
   },

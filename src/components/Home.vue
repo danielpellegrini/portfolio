@@ -4,6 +4,7 @@
     <div class="layover">      
       <b-nav align="center" >
         <b-nav-item class="glitch">Home</b-nav-item>
+          <!-- AGGIUNGERE CLASSE GLITCH DINAMICA -->
         <b-nav-item v-for="(link, index) in navlinks" :key="link" @click="goToIndex(index)" :class="(activeIndex(index))">
           {{link}}
         </b-nav-item>

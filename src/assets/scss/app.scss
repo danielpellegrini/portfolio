@@ -1,5 +1,6 @@
 @import './partials/_nav.scss';
 @import './partials/_holoCards.scss';
+@import './partials/mediaQueries.scss';
 
 * {
     box-sizing: border-box;
@@ -10,23 +11,29 @@
     text-decoration: none;
 
     .main-container {
-        overflow-x: hidden;
+        overflow: hidden;
         position: relative;
         width: 100vw;
         height: 100vh;
         background-image: url(./assets/img/aboutMe.gif);
         // background-image: url(./assets/img/mainBackground.gif);
-        image-rendering: pixelated;
         background-repeat: no-repeat;
         background-size: cover;
+        
         .layover{
             width: 100vw;
             height: 100vh;
             background-color: rgba(0, 0, 0, 0.4);
+            z-index: -1;
+
+            @media screen and (max-width: 375px) {
+                background-color: rgba(0, 0, 0, .2);
+            }
         }
+
     }
-    @media screen and (min-width: 375px) {
-        background-position: center;
+    @media screen and (max-width: 375px) {
+        background-position: right;
     }
 
     .carousel-3d-container {
@@ -34,10 +41,11 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-    
-        .carousel-3d-slide{
+        
+        .carousel-3d-slide {
             background: none;
-            border:none;
-        }        
+            border: none;
+        }
+
     }
 }

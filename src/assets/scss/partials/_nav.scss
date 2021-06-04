@@ -5,8 +5,33 @@
   }
 }
 
+// Glitch animation
+.nav {
+  // home
+  li:first-child {
+    position: relative;
+    animation: glitch 7s 7s infinite;
+  }
+  // about
+  li:nth-child(2) {
+    position: relative;
+    animation: glitch 3s 3s infinite;
+  }
+  // projects
+  li:nth-child(3) {
+    position: relative;
+    animation: glitch 4s 4s infinite;
+  }
+  // contacts
+  li:nth-child(4) {
+    position: relative;
+    animation: glitch 5s 5s infinite;
+  }
+}
+
 .nav-item {
   z-index: 2 !important;
+
   a {
     color: magenta;
     margin-right: 40px;
@@ -86,29 +111,6 @@
 }
 
 
-// GLITCH ANIMATIONS
-.glitch {
-  position: relative;
-  animation: glitch 4s 4s infinite;  
-}
-
-//about
-.glitch-2 {
-  position: relative;
-  animation: glitch 6s 6s infinite;
-}
-
-//projects
-.glitch-3 {
-  position: relative;
-  animation: glitch 5s 5s infinite;
-}
-
-//contacts
-.glitch-4 {
-  position: relative;
-  animation: glitch 7s 7s infinite;
-}
 
 @keyframes glitch {
   1%{

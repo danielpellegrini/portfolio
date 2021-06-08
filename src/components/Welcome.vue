@@ -1,26 +1,42 @@
 <template>
-    <div class="welcome-container">
-        <div class="welcome">
-            <section class="text-left">
-              <h1>Hi,</h1>  
-              <h1>I am Daniel Pellegrini</h1>  
-              <h1>and I am a Full Stack Web Dev</h1> 
-               
-            </section>
-        </div>
-    </div>
+    <div id="welcomeComponent">
 
+        <div id="welcome-container-top" @click="slideUp" >
+            <div class="welcome">                
+                <h1 class="text text-flicker-in-glow">Hi,</h1>
+                <h1 class="text text-flicker-in-glow ">I am <span class="text-flicker-in-glow2">Daniel Pellegrini</span> </h1>
+                <h1 class="text text-flicker-in-glow">and I am a <span class="text-flicker-in-glow2">Full Stack Web Dev</span></h1> 
+
+            </div>
+        </div>
+
+        <div id="loader">
+            <div class="outer">
+                <div class="inner"></div>
+            </div>
+            <h2>LOADING...</h2>
+        </div>
+
+        <div id="welcome-container-bottom" @click="slideUp">
+
+        </div>
+
+    </div>
 </template>
+
 
 <script>
 export default {
-
-    mounted() {
-
-        
-        
-        
-    }
+    methods: {
+       
+        slideUp() {
+            document.getElementById("welcome-container-top").className = "slide-out-top";
+            document.getElementById("welcome-container-bottom").className = "slide-out-bottom";
+            document.getElementById("carousel").className = "carousel-3d-container";              
+            document.getElementById("welcomeComponent").className = "hideWelcome";
+        }
     
 }
+}
 </script>
+

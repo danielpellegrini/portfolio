@@ -4,14 +4,14 @@
 
     <nav class="layover">      
       <b-nav align="center" >
-        <b-nav-item>Home</b-nav-item>
+        <b-nav-item @click="goHome">Home</b-nav-item>
         <b-nav-item v-for="(link, index) in navlinks" :key="link" @click="goToIndex(index)" :class="(activeIndex(index))">
           {{link}}
         </b-nav-item>
       </b-nav>
     </nav> 
 
-    <carousel-3d class="d-none" ref="mycarousel" @before-slide-change="goToIndex" :width="500" :height="800">
+    <carousel-3d id="carousel" class="d-none" ref="mycarousel" @before-slide-change="goToIndex" :width="500" :height="800">
       <slide :index="0" >
         <About/>
       </slide>
@@ -62,6 +62,9 @@ export default {
       }  else {
         return 'highlight'
       }
+    },
+    goHome() {
+      document.getElementById("welcomeComponent").className = "viewWelcome";
     }
   }
 }

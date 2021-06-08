@@ -1,6 +1,7 @@
 @import './partials/_nav.scss';
 @import './partials/_holoCards.scss';
 @import './partials/mediaQueries.scss';
+@import './partials/welcome.scss';
 
 * {
     box-sizing: border-box;
@@ -30,6 +31,8 @@
                 background-color: rgba(0, 0, 0, .2);
             }
         }
+
+
 
     }
     @media screen and (max-width: 375px) {

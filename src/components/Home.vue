@@ -66,9 +66,9 @@ export default {
     },
     viewWelcome() {
         document.getElementById("carousel").className = "d-none";
-        document.getElementById("navbar").className = "d-none";
         document.getElementById("welcome-container-top").className = "slide-in-top";
         document.getElementById("welcome-container-bottom").className = "slide-in-bottom";
+        document.getElementsByTagName("UL")[0].className = "d-none";
     }
 
   }

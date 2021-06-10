@@ -57,7 +57,7 @@ export default {
         hideWelcome() {
             document.getElementById("welcome-container-top").className = "slide-out-top";
             document.getElementById("welcome-container-bottom").className = "slide-out-bottom";
-            document.getElementById("carousel").className = "carousel-3d-container";              
+            document.getElementById("carousel").className = "hundred carousel-3d-container";              
             document.getElementById("welcomeComponent").className = "hideWelcome";
             document.getElementById("navbar").className = "d-block";
             document.getElementById("navbar").className = "layover";

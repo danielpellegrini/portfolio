@@ -9,20 +9,19 @@
           {{link}}
         </b-nav-item>
       </b-nav>
-    </nav> 
-
-    <carousel-3d id="carousel" class="d-none" ref="mycarousel" @before-slide-change="goToIndex" :width="500" :height="800">
-      <slide :index="0" >
-        <About/>
-      </slide>
-      <slide :index="1">
-        <Projects/>
-      </slide>
-      <slide :index="2">
-        <Contacts/>
-      </slide>
-    </carousel-3d>
+    </nav>
     
+      <carousel-3d id="carousel" class="d-none" ref="mycarousel" @before-slide-change="goToIndex" :width="500" :height="800">
+        <slide :index="0" >
+          <About/>
+        </slide>
+        <slide :index="1">
+          <Projects/>
+        </slide>
+        <slide :index="2">
+          <Contacts/>
+        </slide>
+      </carousel-3d>     
 
   </div>  
 </template>
@@ -65,10 +64,11 @@ export default {
       }
     },
     viewWelcome() {
-        document.getElementById("carousel").className = "d-none";
-        document.getElementById("welcome-container-top").className = "slide-in-top";
+        document.getElementById("carousel").className = "carousel-3d-container zero";
+        document.getElementById("welcome-container-top").className = "slide-in-top zindex";
         document.getElementById("welcome-container-bottom").className = "slide-in-bottom";
         document.getElementsByTagName("UL")[0].className = "d-none";
+
     }
 
   }

@@ -13,7 +13,8 @@
     "core-js": "^3.6.5",
     "splitting": "^1.0.6",
     "vue": "^2.6.11",
-    "vue-carousel-3d": "^1.0.1"
+    "vue-carousel-3d": "^1.0.1",
+    "vue-scrollin": "^0.1.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

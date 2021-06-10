@@ -2,9 +2,9 @@
   <div class="main-container">
     <Welcome/>
 
-    <nav class="layover">      
+    <nav id="navbar" class="layover">      
       <b-nav align="center" >
-        <b-nav-item @click="goHome">Home</b-nav-item>
+        <b-nav-item @click="viewWelcome">Home</b-nav-item>
         <b-nav-item v-for="(link, index) in navlinks" :key="link" @click="goToIndex(index)" :class="(activeIndex(index))">
           {{link}}
         </b-nav-item>
@@ -22,6 +22,7 @@
         <Contacts/>
       </slide>
     </carousel-3d>
+    
 
   </div>  
 </template>
@@ -63,9 +64,13 @@ export default {
         return 'highlight'
       }
     },
-    goHome() {
-      document.getElementById("welcomeComponent").className = "viewWelcome";
+    viewWelcome() {
+        document.getElementById("carousel").className = "d-none";
+        document.getElementById("navbar").className = "d-none";
+        document.getElementById("welcome-container-top").className = "slide-in-top";
+        document.getElementById("welcome-container-bottom").className = "slide-in-bottom";
     }
+
   }
 }
 </script>

@@ -62,7 +62,6 @@ export default {
             document.getElementById("navbar").className = "d-block";
             document.getElementById("navbar").className = "layover";
             document.getElementsByTagName("UL")[0].className = "nav justify-content-center";
-
         }    
     }
 }

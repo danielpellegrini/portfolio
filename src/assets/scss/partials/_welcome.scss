@@ -15,7 +15,9 @@
           align-self: flex-start;
         }
         
-        .text {
+        .text1,
+        .text2,
+        .text3 {
           display: none; 
           line-height: 2em;  
           font-size: 4vh;
@@ -354,6 +356,8 @@
     width: 0;
     height: 0;
 }
+
+
 
 
 

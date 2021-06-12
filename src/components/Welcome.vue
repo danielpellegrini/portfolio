@@ -4,7 +4,7 @@
         <div id="welcome-container-top" @click="hideWelcome" >
             <div class="welcome"> 
 
-                <h1 class="text text-flicker-in-glow">
+                <!-- <h1 class="text text-flicker-in-glow">
                     <v-scrollin id="scrollName" class="d-inline" :speed="25" :misses="3">Hi,</v-scrollin> 
                 </h1>
 
@@ -13,7 +13,7 @@
                     <span id="name" class="text-flicker-in-glow2">
                         <v-scrollin id="scrollName" class="d-inline" :speed="30" :misses="3">Daniel Pellegrini</v-scrollin>
                     </span> 
-                </h1>
+                </h1> -->
 
             </div>
         </div>
@@ -30,13 +30,13 @@
         <div id="welcome-container-bottom" @click="hideWelcome">
             <div class="welcome">
                 
-                    <h1 class="text text-flicker-in-glow">
+                    <!-- <h1 class="text text-flicker-in-glow">
                         <v-scrollin id="scrollName" class="d-inline" :speed="25" :misses="3">and I am a</v-scrollin>
                                         
                         <span id="job" class="text-flicker-in-glow2">
                             <v-scrollin id="scrollJob" class="d-inline" :speed="30" :misses="4">Full Stack Web Dev</v-scrollin>
                         </span>
-                    </h1>
+                    </h1> -->
                 
             </div> 
 
@@ -47,10 +47,10 @@
 
 
 <script>
-import VScrollin from 'vue-scrollin'
+// import VScrollin from 'vue-scrollin'
 export default {
     components: {
-        VScrollin
+        // VScrollin
     },
     methods: {
        

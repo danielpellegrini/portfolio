@@ -11,7 +11,7 @@
       </b-nav>
     </nav>
     
-      <carousel-3d id="carousel" class="d-none" ref="mycarousel" @before-slide-change="goToIndex" :width="500" :height="800">
+      <carousel-3d id="carousel" class="d-none" ref="mycarousel" @after-slide-change="goToIndex" :width="500" :height="800">
         <slide :index="0" >
           <About/>
         </slide>

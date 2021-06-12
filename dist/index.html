@@ -1,35 +1,69 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet"><link rel="icon" href="/portfolio/favicon.ico"><title>Daniel Pellegrini | Full Stack Web Dev</title><link href="/portfolio/css/app.9cb8e0d7.css" rel="preload" as="style"><link href="/portfolio/css/chunk-vendors.f4fc0aef.css" rel="preload" as="style"><link href="/portfolio/js/app.ec88ce72.js" rel="preload" as="script"><link href="/portfolio/js/chunk-vendors.e5f077e4.js" rel="preload" as="script"><link href="/portfolio/css/chunk-vendors.f4fc0aef.css" rel="stylesheet"><link href="/portfolio/css/app.9cb8e0d7.css" rel="stylesheet"></head><body onload="time(), time2()"><noscript><strong>We're sorry but this webpage doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><script>let myVar;
-      let bouncing;
+<!DOCTYPE html>
+<html lang="en">
 
-      function time() {
-        myVar = setTimeout(showPage, 50);
-      }
-      function time2() {
-        bouncing = setInterval(bounce, 5500);
-        // bouncing = setInterval(loopBounce, 5800);
-    
-      }
-      function time3() {
-        myVar = setTimeout(showJob, 500);
-      }
-      function showPage() {
-        document.getElementById("loader").style.display = "none";
-        
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  <link rel="icon" href="/portfolio/favicon.ico">
+  <title>Daniel Pellegrini | Full Stack Web Dev</title>
+  <link href="/portfolio/css/app.9cb8e0d7.css" rel="preload" as="style">
+  <link href="/portfolio/css/chunk-vendors.f4fc0aef.css" rel="preload" as="style">
+  <link href="/portfolio/js/app.ec88ce72.js" rel="preload" as="script">
+  <link href="/portfolio/js/chunk-vendors.e5f077e4.js" rel="preload" as="script">
+  <link href="/portfolio/css/chunk-vendors.f4fc0aef.css" rel="stylesheet">
+  <link href="/portfolio/css/app.9cb8e0d7.css" rel="stylesheet">
+</head>
 
-        let elems = document.getElementsByClassName("text");
-        for (let i = 0; i < elems.length; i++) {
-          elems [i].style.display = 'block';          
-        }
-      } 
-      function bounce() {
-        let element = document.getElementById("welcome-container-top");
-        if (element.classList.contains("slide-out-top")) {
-          return
-        } else {
-          document.getElementById("welcome-container-top").className = "bounce-top";
-        }
-        // document.getElementById("scrollName").className = "d-inline";
-      }      
-      function loopBounce() {
-        document.getElementById("welcome-container-top").className = "";
-      }</script><script src="/portfolio/js/chunk-vendors.e5f077e4.js"></script><script src="/portfolio/js/app.ec88ce72.js"></script></body></html>
+<body onload="time(), time2()"><noscript><strong>We're sorry but this webpage doesn't work properly without JavaScript
+      enabled. Please enable it to continue.</strong></noscript>
+  <div id="app"></div>
+  <script>
+    let myVar;
+    let bouncing;
+
+    function time() {
+      myVar = setTimeout(showPage, 50);
+    }
+
+    function time2() {
+      bouncing = setInterval(bounce, 5500);
+      // bouncing = setInterval(loopBounce, 5800);
+
+    }
+
+    function time3() {
+      myVar = setTimeout(showJob, 500);
+    }
+
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+
+
+      let elems = document.getElementsByClassName("text");
+      for (let i = 0; i < elems.length; i++) {
+        elems[i].style.display = 'block';
+      }
+    }
+
+    function bounce() {
+      let element = document.getElementById("welcome-container-top");
+      if (element.classList.contains("slide-out-top")) {
+        return
+      } else {
+        document.getElementById("welcome-container-top").className = "bounce-top";
+      }
+      // document.getElementById("scrollName").className = "d-inline";
+    }
+
+    function loopBounce() {
+      document.getElementById("welcome-container-top").className = "";
+    }
+  </script>
+  <script src="/portfolio/js/chunk-vendors.e5f077e4.js"></script>
+  <script src="/portfolio/js/app.ec88ce72.js"></script>
+</body>
+
+</html>

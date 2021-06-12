@@ -1,24 +1,30 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet"><link rel="icon" href="/portfolio/favicon.ico"><title>Daniel Pellegrini | Full Stack Web Dev</title><link href="/portfolio/css/app.9cb8e0d7.css" rel="preload" as="style"><link href="/portfolio/css/chunk-vendors.55204a1e.css" rel="preload" as="style"><link href="/portfolio/js/app.867b40c4.js" rel="preload" as="script"><link href="/portfolio/js/chunk-vendors.e3d01ba6.js" rel="preload" as="script"><link href="/portfolio/css/chunk-vendors.55204a1e.css" rel="stylesheet"><link href="/portfolio/css/app.9cb8e0d7.css" rel="stylesheet"></head><body onload="time(), time2()"><noscript><strong>We're sorry but this webpage doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><script>let myVar;
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet"><link rel="icon" href="/portfolio/favicon.ico"><title>Daniel Pellegrini | Full Stack Web Dev</title><link href="/portfolio/css/app.1158d9af.css" rel="preload" as="style"><link href="/portfolio/css/chunk-vendors.55204a1e.css" rel="preload" as="style"><link href="/portfolio/js/app.786045ed.js" rel="preload" as="script"><link href="/portfolio/js/chunk-vendors.4e11ff79.js" rel="preload" as="script"><link href="/portfolio/css/chunk-vendors.55204a1e.css" rel="stylesheet"><link href="/portfolio/css/app.1158d9af.css" rel="stylesheet"></head><body onload="time(), time2()"><noscript><strong>We're sorry but this webpage doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><script>let myVar;
       let bouncing;
 
       function time() {
-        myVar = setTimeout(showPage, 50);
+        myVar = setTimeout(showPage, 10);
       }
       function time2() {
         bouncing = setInterval(bounce, 5500);
         // bouncing = setInterval(loopBounce, 5800);
     
       }
-      function time3() {
-        myVar = setTimeout(showJob, 500);
-      }
+
       function showPage() {
         document.getElementById("loader").style.display = "none";
         
 
-        let elems = document.getElementsByClassName("text");
-        for (let i = 0; i < elems.length; i++) {
-          elems [i].style.display = 'block';          
+        let elem1 = document.getElementsByClassName("text1");
+        for (let i = 0; i < elem1.length; i++) {
+          elem1 [i].style.display = 'block';          
+        }
+        let elem2 = document.getElementsByClassName("text2");
+        for (let i = 0; i < elem2.length; i++) {
+          elem2 [i].style.display = 'block';          
+        }
+        let elem3 = document.getElementsByClassName("text3");
+        for (let i = 0; i < elem3.length; i++) {
+          elem3 [i].style.display = 'block';          
         }
       } 
       function bounce() {
@@ -32,4 +38,4 @@
       }      
       function loopBounce() {
         document.getElementById("welcome-container-top").className = "";
-      }</script><script src="/portfolio/js/chunk-vendors.e3d01ba6.js"></script><script src="/portfolio/js/app.867b40c4.js"></script></body></html>
+      }</script><script src="/portfolio/js/chunk-vendors.4e11ff79.js"></script><script src="/portfolio/js/app.786045ed.js"></script></body></html>

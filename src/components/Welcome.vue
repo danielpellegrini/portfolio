@@ -3,10 +3,8 @@
 
         <div id="welcome-container-top" @click="hideWelcome" >
             <div class="welcome">             
-                <div class="text1"></div>
-                <div class="text2"></div>            
-                <div class="text3"></div>            
-
+                <div class="text1 text-flicker-in-glow"></div>
+                <div class="text2"></div> 
             </div>
         </div>
 
@@ -20,10 +18,8 @@
         <!-- /LOADING -->
 
         <div id="welcome-container-bottom" @click="hideWelcome">
-            <div class="welcome">
-                
-             
-                
+            <div class="welcome">                
+                <div class="text3"></div>                
             </div> 
 
         </div>
@@ -58,7 +54,7 @@ export default {
         class TextScramble {
           constructor(el) {
             this.el = el
-            this.chars = '!<>-_\\/[]{}—=+*^?#________'
+            this.chars = '!<>-_\\/[]{}—=+*^?#__'
             this.update = this.update.bind(this)
           }
           setText(newText) {
@@ -86,7 +82,7 @@ export default {
               if (this.frame >= end) {                
                 output += to
               } else if (this.frame >= start) {
-                if (!char || Math.random() < 0.88) {
+                if (!char || Math.random() < 0.48) {
                   char = this.randomChar()
                   this.queue[i].char = char
                 }
@@ -116,7 +112,7 @@ export default {
           'Hi,'
         ]
         const phrase2 = [
-          'I am <span>Daniel Pellegrini</span>'
+          'I am <span class="">Daniel Pellegrini</span>'
         ]
         const phrase3 = [
           'and I am a <span>Full Stack Web Dev</span>'
@@ -129,25 +125,34 @@ export default {
         const fx2 = new TextScramble(el2)
         const fx3 = new TextScramble(el3)
 
-        let counter1 = 0
-        let counter2 = 0
-        let counter3 = 0
+        let counter = 0;
+        let counter1 = 0;
+        let counter2 = 0;
+
         const next = () => {
-          fx1.setText(phrase1[counter1]).then(() => {
-            setTimeout(next, 80)
+          fx1.setText(phrase1[counter]).then(() => {
+            setInterval(next, 2000)
           })
-          fx2.setText(phrase2[counter2]).then(() => {
-            setTimeout(next, 200)
-          })
-          fx3.setText(phrase3[counter3]).then(() => {
-            setTimeout(next, 5000)
-          })
-          counter1 = (counter1 + 1) % phrase1.length
-          counter2 = (counter2 + 1) % phrase2.length
-          counter3 = (counter3 + 1) % phrase3.length
+          counter = (counter + 1) % phrase1.length
         }
 
-        next()
+        const next1 = () => {
+          fx2.setText(phrase2[counter1]).then(() => {
+            setInterval(next, 2000)
+          })
+          counter1 = (counter1 + 1) % phrase2.length
+        }
+
+        const next2 = () => {
+          fx3.setText(phrase3[counter2]).then(() => {
+            setInterval(next, 2000)
+          })
+          counter2 = (counter2 + 1) % phrase3.length
+        }
+
+        next();
+        next1();
+        next2();
 
     }
 }

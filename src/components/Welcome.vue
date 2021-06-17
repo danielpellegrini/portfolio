@@ -1,9 +1,18 @@
 <template>
     <div id="welcomeComponent">
 
-        <div id="welcome-container-top" @click="hideWelcome" >
-            <div class="welcome">             
-                <div class="text1 text-flicker-in-glow"></div>
+
+        <div id="welcome-container-top" >
+            <div id="more-container" @click="hideWelcome" class="d-flex justify-content-center align-items-end pb-3">
+              <div id="swipe-up-container">
+                <i class="fas fa-angle-up justify-content-center d-flex slide-out-blurred-top"></i>
+                <i class="fas fa-angle-up justify-content-center d-flex slide-out-blurred-top2"></i>
+                <i class="fas fa-angle-up justify-content-center d-flex slide-out-blurred-top-last"></i>
+              <h6>More</h6>
+            </div>
+          </div>
+            <div class="welcome"> 
+                <div class="text1 text-flicker-in-glow"></div>        
                 <div class="text2"></div> 
             </div>
         </div>
@@ -17,7 +26,7 @@
         </div>
         <!-- /LOADING -->
 
-        <div id="welcome-container-bottom" @click="hideWelcome">
+        <div id="welcome-container-bottom">
             <div class="welcome">                
                 <div class="text3"></div>                
             </div> 
@@ -65,8 +74,42 @@ export default {
             for (let i = 0; i < length; i++) {
               const from = oldText[i] || ''
               const to = newText[i] || ''
-              const start = Math.floor(Math.random() * 80)
-              const end = start + Math.floor(Math.random() * 80)
+              const start = Math.floor(Math.random() * 64)
+              const end = start + Math.floor(Math.random() * 64)
+              this.queue.push({ from, to, start, end })
+            }
+            cancelAnimationFrame(this.frameRequest)
+            this.frame = 0
+            this.update()
+            return promise
+          }
+          setText1(newText) {
+            const oldText = this.el.innerText
+            const length = Math.max(oldText.length, newText.length)
+            const promise = new Promise((resolve) => this.resolve = resolve)
+            this.queue = []
+            for (let i = 0; i < length; i++) {
+              const from = oldText[i] || ''
+              const to = newText[i] || ''
+              const start = Math.floor(Math.random() * 128)
+              const end = start + Math.floor(Math.random() * 128)
+              this.queue.push({ from, to, start, end })
+            }
+            cancelAnimationFrame(this.frameRequest)
+            this.frame = 0
+            this.update()
+            return promise
+          }
+          setText2(newText) {
+            const oldText = this.el.innerText
+            const length = Math.max(oldText.length, newText.length)
+            const promise = new Promise((resolve) => this.resolve = resolve)
+            this.queue = []
+            for (let i = 0; i < length; i++) {
+              const from = oldText[i] || ''
+              const to = newText[i] || ''
+              const start = Math.floor(Math.random() * 256)
+              const end = start + Math.floor(Math.random() * 256)
               this.queue.push({ from, to, start, end })
             }
             cancelAnimationFrame(this.frameRequest)
@@ -82,7 +125,7 @@ export default {
               if (this.frame >= end) {                
                 output += to
               } else if (this.frame >= start) {
-                if (!char || Math.random() < 0.48) {
+                if (!char || Math.random() < 1) {
                   char = this.randomChar()
                   this.queue[i].char = char
                 }
@@ -112,7 +155,7 @@ export default {
           'Hi,'
         ]
         const phrase2 = [
-          'I am <span class="">Daniel Pellegrini</span>'
+          'I am <span>Daniel Pellegrini</span>'
         ]
         const phrase3 = [
           'and I am a <span>Full Stack Web Dev</span>'
@@ -126,33 +169,32 @@ export default {
         const fx3 = new TextScramble(el3)
 
         let counter = 0;
-        let counter1 = 0;
-        let counter2 = 0;
 
         const next = () => {
           fx1.setText(phrase1[counter]).then(() => {
-            setInterval(next, 2000)
+            next()
           })
           counter = (counter + 1) % phrase1.length
         }
 
         const next1 = () => {
-          fx2.setText(phrase2[counter1]).then(() => {
-            setInterval(next, 2000)
+          fx2.setText1(phrase2[counter]).then(() => {
+            next1()
           })
-          counter1 = (counter1 + 1) % phrase2.length
+          counter = (counter + 1) % phrase2.length
         }
 
         const next2 = () => {
-          fx3.setText(phrase3[counter2]).then(() => {
-            setInterval(next, 2000)
+          fx3.setText2(phrase3[counter]).then(() => {
+            next2()
           })
-          counter2 = (counter2 + 1) % phrase3.length
+          counter = (counter + 1) % phrase3.length
         }
 
         next();
         next1();
         next2();
+
 
     }
 }

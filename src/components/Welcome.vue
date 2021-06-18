@@ -3,7 +3,7 @@
 
 
         <div id="welcome-container-top" >
-            <div id="more-container" @click="hideWelcome" class="d-flex justify-content-center align-items-end pb-3">
+            <div id="more-container" @click="hideWelcome" class="more-container">
               <div id="swipe-up-container">
                 <i class="fas fa-angle-up justify-content-center d-flex slide-out-blurred-top"></i>
                 <i class="fas fa-angle-up justify-content-center d-flex slide-out-blurred-top2"></i>
@@ -43,19 +43,30 @@ export default {
     components: {
         // VScrollin
     },
-    methods: {
-       
-        hideWelcome() {
-            document.getElementById("welcome-container-top").className = "slide-out-top";
-            document.getElementById("welcome-container-bottom").className = "slide-out-bottom";
-            document.getElementById("carousel").className = "hundred carousel-3d-container";              
-            document.getElementById("welcomeComponent").className = "hideWelcome";
-            document.getElementById("navbar").className = "d-block";
-            document.getElementById("navbar").className = "layover";
-            document.getElementsByTagName("UL")[0].className = "nav justify-content-center";
-        }    
+    methods: {             
+      hideWelcome() {
+        document.getElementById("welcome-container-top").className = "slide-out-top";
+        document.getElementById("welcome-container-bottom").className = "slide-out-bottom";
+        document.getElementById("carousel").className = "hundred carousel-3d-container";              
+        document.getElementById("welcomeComponent").className = "hide-welcome";
+        document.getElementById("navbar").className = "d-block";
+        document.getElementById("navbar").className = "layover";
+        document.getElementsByTagName("UL")[0].className = "nav justify-content-center";
+        document.getElementById("more-container").className = "hidden";
+      },
+      hideMore() {
+        document.getElementById("more-container").className = "hidden";
+      },
+      viewMore() {
+      document.getElementById("more-container").className = "more-container";
+    }
     },
+
     mounted() {
+      this.hideMore();
+      setTimeout(() => this.viewMore(), 5000);
+
+
         // ——————————————————————————————————————————————————
         // TextScramble
         // ——————————————————————————————————————————————————
@@ -148,7 +159,7 @@ export default {
         }
 
         // ——————————————————————————————————————————————————
-        // Example
+        // Phrases
         // ——————————————————————————————————————————————————
 
         let phrase1 = [

@@ -10,7 +10,7 @@
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title>Daniel Pellegrini | Full Stack Web Dev</title>
   </head>
-  <body onload="time(), time2()">
+  <body onload="time()">
     <noscript>
       <strong>We're sorry but this webpage doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
@@ -24,12 +24,6 @@
       function time() {
         myVar = setTimeout(showPage, 10);
       }
-      function time2() {
-        bouncing = setInterval(bounce, 5500);
-        // bouncing = setInterval(loopBounce, 5800);
-    
-      }
-
       function showPage() {
         document.getElementById("loader").style.display = "none";
         
@@ -46,18 +40,6 @@
         for (let i = 0; i < elem3.length; i++) {
           elem3 [i].style.display = 'block';          
         }
-      } 
-      function bounce() {
-        let element = document.getElementById("welcome-container-top");
-        if (element.classList.contains("slide-out-top")) {
-          return
-        } else {
-          document.getElementById("welcome-container-top").className = "bounce-top";
-        }
-        // document.getElementById("scrollName").className = "d-inline";
-      }      
-      function loopBounce() {
-        document.getElementById("welcome-container-top").className = "";
       }      
     </script>
 

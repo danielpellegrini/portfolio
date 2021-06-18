@@ -65,12 +65,17 @@ export default {
     },
     viewWelcome() {
         document.getElementById("carousel").className = "carousel-3d-container zero";
-        document.getElementById("welcome-container-top").className = "slide-in-top zindex";
+        document.getElementById("welcome-container-top").className = "slide-in-top";
         document.getElementById("welcome-container-bottom").className = "slide-in-bottom";
+        document.getElementById("welcomeComponent").className = "view-welcome";
         document.getElementsByTagName("UL")[0].className = "d-none";
-
+        setTimeout(() => this.viewMore(), 1500);
+    },
+    viewMore() {
+      document.getElementById("more-container").className = "more-container";
+      document.getElementById("welcome-container-top").className = " ";
+      document.getElementById("welcome-container-bottom").className = " ";
     }
-
   }
 }
 </script>

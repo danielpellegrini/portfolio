@@ -85,8 +85,8 @@ export default {
             for (let i = 0; i < length; i++) {
               const from = oldText[i] || ''
               const to = newText[i] || ''
-              const start = Math.floor(Math.random() * 64)
-              const end = start + Math.floor(Math.random() * 64)
+              const start = Math.floor(Math.random() * 24)
+              const end = start + Math.floor(Math.random() * 24)
               this.queue.push({ from, to, start, end })
             }
             cancelAnimationFrame(this.frameRequest)
@@ -102,8 +102,8 @@ export default {
             for (let i = 0; i < length; i++) {
               const from = oldText[i] || ''
               const to = newText[i] || ''
-              const start = Math.floor(Math.random() * 128)
-              const end = start + Math.floor(Math.random() * 128)
+              const start = Math.floor(Math.random() * 48)
+              const end = start + Math.floor(Math.random() * 48)
               this.queue.push({ from, to, start, end })
             }
             cancelAnimationFrame(this.frameRequest)
@@ -119,8 +119,8 @@ export default {
             for (let i = 0; i < length; i++) {
               const from = oldText[i] || ''
               const to = newText[i] || ''
-              const start = Math.floor(Math.random() * 128)
-              const end = start + Math.floor(Math.random() * 128)
+              const start = Math.floor(Math.random() * 72)
+              const end = start + Math.floor(Math.random() * 72)
               this.queue.push({ from, to, start, end })
             }
             cancelAnimationFrame(this.frameRequest)

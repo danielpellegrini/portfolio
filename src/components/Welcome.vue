@@ -64,7 +64,7 @@ export default {
 
     mounted() {
       this.hideMore();
-      setTimeout(() => this.viewMore(), 5000);
+      setTimeout(() => this.viewMore(), 4000);
 
 
         // ——————————————————————————————————————————————————
@@ -85,8 +85,8 @@ export default {
             for (let i = 0; i < length; i++) {
               const from = oldText[i] || ''
               const to = newText[i] || ''
-              const start = Math.floor(Math.random() * 24)
-              const end = start + Math.floor(Math.random() * 24)
+              const start = Math.floor(Math.random() * 64)
+              const end = start + Math.floor(Math.random() * 64)
               this.queue.push({ from, to, start, end })
             }
             cancelAnimationFrame(this.frameRequest)
@@ -102,8 +102,8 @@ export default {
             for (let i = 0; i < length; i++) {
               const from = oldText[i] || ''
               const to = newText[i] || ''
-              const start = Math.floor(Math.random() * 48)
-              const end = start + Math.floor(Math.random() * 48)
+              const start = Math.floor(Math.random() * 128)
+              const end = start + Math.floor(Math.random() * 128)
               this.queue.push({ from, to, start, end })
             }
             cancelAnimationFrame(this.frameRequest)
@@ -119,8 +119,8 @@ export default {
             for (let i = 0; i < length; i++) {
               const from = oldText[i] || ''
               const to = newText[i] || ''
-              const start = Math.floor(Math.random() * 72)
-              const end = start + Math.floor(Math.random() * 72)
+              const start = Math.floor(Math.random() * 192)
+              const end = start + Math.floor(Math.random() * 192)
               this.queue.push({ from, to, start, end })
             }
             cancelAnimationFrame(this.frameRequest)

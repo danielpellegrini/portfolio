@@ -10,8 +10,7 @@
     border: 2px solid #20FFFF;
     color: #20FFFF;
     border-radius: 45px; 
-    // background: linear-gradient(90deg, rgba(32, 255, 255, .01) 10%, rgba(32, 255, 255, .1) 50%, rgba(0, 212, 255, .01) 100%);
-     
+         
     .holo-top {
         width: 95%;
         height: 60px;
@@ -28,7 +27,7 @@
     }
     main {
         display: flex;
-        justify-content: center;      
+        justify-content: center;     
 
         section {
             background: rgba(0, 0, 0, .5);
@@ -52,5 +51,23 @@
     height: 100%;
     border-radius: 45px; 
     background-color: rgba(0, 0, 0, .5);
+}
+
+.carousel-3d-container {
+    position: absolute !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .carousel-3d-slide {
+        background: none;
+        border: none;
+    }
+
+    @media screen and (min-width: 375px) and (max-width: 768px){
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -65%);
+    }
 }
 

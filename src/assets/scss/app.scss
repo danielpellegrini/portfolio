@@ -14,37 +14,24 @@
     text-decoration: none;
 
     .main-container {
-        overflow: hidden;
-        position: relative;
+      overflow: hidden;
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      background-image: url(./assets/img/aboutMe.webp);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: right;
+      
+      .layover{
         width: 100vw;
         height: 100vh;
-        background-image: url(./assets/img/aboutMe.webp);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: right;
-        
-        .layover{
-            width: 100vw;
-            height: 100vh;
-            background-color: rgba(0, 0, 0, .5);          
+        background-color: rgba(0, 0, 0, .5);          
 
-            @media screen and (max-width: 375px) {
-                background-color: rgba(0, 0, 0, .2);
-            }
+        @media screen and (max-width: 375px) {
+            background-color: rgba(0, 0, 0, .2);
         }
-    }
-
-    .carousel-3d-container {
-        position: absolute !important;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        
-        .carousel-3d-slide {
-            background: none;
-            border: none;
-        }
-
+      }
     }
 
 

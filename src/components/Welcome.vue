@@ -11,10 +11,15 @@
               <h6>More</h6>
             </div>
           </div>
-            <div class="welcome"> 
-                <div class="text1 text-flicker-in-glow"></div>        
-                <div class="text2"></div> 
+          <div class="welcome-content-top">
+            <div class="welcome">                       
+              <span class="text1"></span>  
             </div>
+
+            <div class="welcome">                       
+                <span class="text2"></span> 
+            </div>
+          </div>
         </div>
 
         <!-- LOADING -->
@@ -27,9 +32,11 @@
         <!-- /LOADING -->
 
         <div id="welcome-container-bottom">
+          <div class="welcome-content-bottom">
             <div class="welcome">                
-                <div class="text3"></div>                
+                <span class="text3"></span>                
             </div> 
+          </div>
 
         </div>
 
@@ -40,9 +47,6 @@
 <script>
 // import VScrollin from 'vue-scrollin'
 export default {
-    components: {
-        // VScrollin
-    },
     methods: {             
       hideWelcome() {
         document.getElementById("welcome-container-top").className = "slide-out-top";
@@ -59,13 +63,12 @@ export default {
       },
       viewMore() {
       document.getElementById("more-container").className = "more-container";
-    }
+      }
     },
 
     mounted() {
       this.hideMore();
-      setTimeout(() => this.viewMore(), 5000);
-
+      setTimeout(() => this.viewMore(), 6000);
 
         // ——————————————————————————————————————————————————
         // TextScramble
@@ -102,8 +105,8 @@ export default {
             for (let i = 0; i < length; i++) {
               const from = oldText[i] || ''
               const to = newText[i] || ''
-              const start = Math.floor(Math.random() * 80)
-              const end = start + Math.floor(Math.random() * 80)
+              const start = Math.floor(Math.random() * 100)
+              const end = start + Math.floor(Math.random() * 100)
               this.queue.push({ from, to, start, end })
             }
             cancelAnimationFrame(this.frameRequest)
@@ -119,8 +122,8 @@ export default {
             for (let i = 0; i < length; i++) {
               const from = oldText[i] || ''
               const to = newText[i] || ''
-              const start = Math.floor(Math.random() * 128)
-              const end = start + Math.floor(Math.random() * 128)
+              const start = Math.floor(Math.random() * 100)
+              const end = start + Math.floor(Math.random() * 100)
               this.queue.push({ from, to, start, end })
             }
             cancelAnimationFrame(this.frameRequest)
@@ -154,7 +157,7 @@ export default {
             }
           }
           randomChar() {
-            return this.chars[Math.floor(Math.random() * 2)]
+            return this.chars[Math.floor(Math.random() * this.chars.length)]
           }
         }
 
@@ -196,16 +199,16 @@ export default {
         }
 
         const next2 = () => {
-          fx3.setText2(phrase3[counter]).then(() => {
+          fx3.setText2(phrase3[0]).then(() => {
             next2()
           })
           counter = (counter + 1) % phrase3.length
         }
 
-        next();
-        next1();
-        next2();
-
+        
+          setTimeout(() => next(), 1500);
+          setTimeout(() => next1(), 3000);
+          setTimeout(() => next2(), 5000);
 
     }
 }

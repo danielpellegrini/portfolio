@@ -22,8 +22,10 @@
   }
 
   @media (min-width: 300px) and (max-width: 768px) {
+    width: 6rem;
+    height: 6rem;
     left: 50%;
-    top: 50%;
+    top: 40%;
     transform: translate(-50%, -50%);
   }
 
@@ -63,6 +65,10 @@
   border-radius: 50%;
   animation: slide-out-fwd-center 2s cubic-bezier(0.550, 0.085, 0.180, 0.930) infinite;
   animation-delay: 500ms;
+    @media (min-width: 300px) and (max-width: 768px) {
+      width: 6rem;
+      height: 6rem;
+    }
 }
 @keyframes slide-out-fwd-center {
   0% {
@@ -88,35 +94,58 @@
     img {
       width: 10%;      
     }
-    .welcome {
+    .welcome-content-top,
+    .welcome-content-bottom {
+      display: flex;
+      flex-direction: column;
+      .welcome {
         width: 60%;
         align-self: flex-end;
         position: relative;
+        @media screen and (min-width: 769px){          
+          height: 10vh; 
+          margin: 10px 0;
+        }
         @media screen  and (min-width: 300px) and (max-width: 768px){
           width: 100%;
           align-self: flex-start;
+          height: 6vh;
+          margin: 5px 0;
         }
         
         .text1,
         .text2,
         .text3 {
-          display: none; 
-          line-height: 3em;  
-          font-size: 4vh;
-          @media screen and (max-width: 992px) {
-            font-size: 3vw;
+          display: none;  
+          font-size: 5vh;
+          @media screen and (min-width: 1024px) and (max-width: 1366px) {
+            font-size: 4vh;
             padding: 0 15px;
+          }
+          @media screen and (max-width: 992px) {
+            font-size: 3vh;
+            padding: 0 15px;
+          }
+          @media screen and (max-height: 768px) {
+            font-size: 6vh;
+            padding: 0 15px;
+            text-align: center;
           }
           @media screen and (max-width: 500px) {
             font-size: 4vw;
+            text-align: center;
           }      
           span {
               color: magenta;
           }
-
+          .dud {
+            color: #01AAAA;
+          }
         }
 
-    } //welcome
+      } //welcome
+
+    } //welcome-content
   @media screen  and (min-width: 300px) and (max-width: 768px) {
     padding: 0 15px;
   }

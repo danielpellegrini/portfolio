@@ -206,9 +206,9 @@ export default {
         }
 
         
-          setTimeout(() => next(), 1500);
-          setTimeout(() => next1(), 4000);
-          setTimeout(() => next2(), 5500);
+          setTimeout(() => next(), 1800);
+          setTimeout(() => next1(), 3000);
+          setTimeout(() => next2(), 5000);
 
     }
 }

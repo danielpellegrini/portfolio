@@ -1,5 +1,5 @@
 <template>
-    <div id="welcomeComponent">
+    <div id="welcomeComponent" class="d-none">
 
 
         <div id="welcome-container-top" >

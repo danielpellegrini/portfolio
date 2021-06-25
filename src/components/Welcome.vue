@@ -204,11 +204,10 @@ export default {
           })
           counter = (counter + 1) % phrase3.length
         }
-
         
-          setTimeout(() => next(), 1800);
-          setTimeout(() => next1(), 3000);
-          setTimeout(() => next2(), 5000);
+          setTimeout(() => next(), 2000);
+          setTimeout(() => next1(), 3800);
+          setTimeout(() => next2(), 5800);
 
     }
 }

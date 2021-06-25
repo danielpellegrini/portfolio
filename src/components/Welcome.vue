@@ -68,7 +68,7 @@ export default {
 
     mounted() {
       this.hideMore();
-      setTimeout(() => this.viewMore(), 6000);
+      setTimeout(() => this.viewMore(), 7000);
 
         // ——————————————————————————————————————————————————
         // TextScramble
@@ -207,8 +207,8 @@ export default {
 
         
           setTimeout(() => next(), 1500);
-          setTimeout(() => next1(), 3000);
-          setTimeout(() => next2(), 5000);
+          setTimeout(() => next1(), 4000);
+          setTimeout(() => next2(), 5500);
 
     }
 }

@@ -5,29 +5,7 @@
   }
 }
 
-// Glitch animation
-.nav {
-  // home
-  li:first-child {
-    position: relative;
-    animation: glitch 7s 7s infinite;
-  }
-  // about
-  li:nth-child(2) {
-    position: relative;
-    animation: glitch 3s 3s infinite;
-  }
-  // projects
-  li:nth-child(3) {
-    position: relative;
-    animation: glitch 4s 4s infinite;
-  }
-  // contacts
-  li:nth-child(4) {
-    position: relative;
-    animation: glitch 5s 5s infinite;
-  }
-}
+
 
 .nav-item {
   z-index: 2 !important;
@@ -113,15 +91,6 @@
 }
 
 
-
-@keyframes glitch {
-  1%{
-    transform: rotateX(10deg) skewX(90deg);
-  }
-  2%{
-    transform: rotateX(0deg) skewX(0deg);
-  }
-}
 
 
 

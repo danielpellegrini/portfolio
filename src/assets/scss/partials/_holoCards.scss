@@ -35,11 +35,27 @@
     .fa-compress-arrows-alt {
         transform: scale(0.5);
         transition: all 500ms;
+        animation: pulse 2.5s infinite;
         &:hover {
             transform: scale(1);
             transition: all 500ms; 
         }
     }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(0.5);
+      }
+  
+      70% {
+        transform: scale(0.7);
+      }
+  
+      100% {
+        transform: scale(0.5);
+      }
+    }
+
     .fa-compress-arrows-alt {
         left: 95%;
     }

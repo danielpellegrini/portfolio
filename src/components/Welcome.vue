@@ -1,7 +1,6 @@
 <template>
     <div id="welcomeComponent" class="">
 
-
         <div id="welcome-container-top" >
             <div id="more-container" @click="hideWelcome" class="more-container">
               <div id="swipe-up-container">
@@ -68,7 +67,7 @@ export default {
 
     mounted() {
       this.hideMore();
-      setTimeout(() => this.viewMore(), 7800);
+      setTimeout(() => this.viewMore(), 6500);
 
         // ——————————————————————————————————————————————————
         // TextScramble
@@ -77,7 +76,7 @@ export default {
         class TextScramble {
           constructor(el) {
             this.el = el
-            this.chars = '!<>-_\\/[]{}—=+*^?#__'
+            this.chars = '!<>-_/[]{}—=+*^?#__'
             this.update = this.update.bind(this)
           }
           setText(newText) {
@@ -105,8 +104,8 @@ export default {
             for (let i = 0; i < length; i++) {
               const from = oldText[i] || ''
               const to = newText[i] || ''
-              const start = Math.floor(Math.random() * 50)
-              const end = start + Math.floor(Math.random() * 50)
+              const start = Math.floor(Math.random() * 40)
+              const end = start + Math.floor(Math.random() * 40)
               this.queue.push({ from, to, start, end })
             }
             cancelAnimationFrame(this.frameRequest)
@@ -206,8 +205,8 @@ export default {
         }
         
           setTimeout(() => next(), 2000);
-          setTimeout(() => next1(), 3800);
-          setTimeout(() => next2(), 5800);
+          setTimeout(() => next1(), 3000);
+          setTimeout(() => next2(), 4500);
 
     }
 }

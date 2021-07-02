@@ -11,7 +11,7 @@
       </b-nav>
     </nav>
     
-      <carousel-3d id="carousel" class="d-none" ref="mycarousel" @after-slide-change="goToIndex" :width="500" :height="750">
+      <carousel-3d id="carousel" class="" ref="mycarousel" @after-slide-change="goToIndex" :space="500" :width="1900" :height="2800">
         <slide :index="0" >
           <About/>
         </slide>
@@ -75,7 +75,8 @@ export default {
       document.getElementById("more-container").className = "more-container";
       document.getElementById("welcome-container-top").className = " ";
       document.getElementById("welcome-container-bottom").className = " ";
-    }
+    },
+    
   }
 }
 </script>

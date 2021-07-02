@@ -3,24 +3,32 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
+    width: 30%;
+    height: 30%;
     border-radius: 45px;
     background-color: rgba(0, 0, 0, .5);
+    transition: all 500ms;
 }
+.max-width {
+    width: 100% !important;
+    transition: all 500ms;
+    background-color: rgba(0, 0, 0, .6);
+}
+
 
 .holoContainer {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
+    width: 30%;
+    height: 30%;
     border: 2px solid #20FFFF;
     color: #20FFFF;
     border-radius: 45px; 
     overflow-x: auto;
     padding-bottom: 10px;
+    transition: all 500ms;
 
          
     .holo-top {
@@ -72,6 +80,18 @@
             .card:nth-child(3) {
                 background-color: rgba(21, 25, 34, .9);
             }
+            .card:nth-child(4) {
+                background-color: rgba(255, 255, 255, .97);
+                h5 {
+                    color: rgba(32, 155, 155, 1);
+                }
+            }
+            .card:nth-child(5) {
+                background-color: rgba(255, 255, 255, .97);
+                h5 {
+                    color: rgba(32, 155, 155, 1);
+                }
+            }
             h5 {
                 color: rgba(32, 255, 255, 1);
             }
@@ -81,15 +101,20 @@
             }
         }
     }
-    i {
-        position: sticky;
-        bottom: 20px;
-        left: 90%;
-    }
+
 
 }
+i {
+    position: sticky;
+    bottom: 20px;
+    left: 93%;
+    font-size: 2rem;
+    cursor: pointer;
 
-
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
 
 .carousel-3d-container {
     position: absolute !important;
@@ -102,10 +127,27 @@
         border: none;
     }
 
-    @media screen and (min-width: 375px) and (max-width: 768px){
+    @media screen 
+        and (min-width: 375px) 
+        and (max-width: 768px) {
             top: 50%;
             left: 50%;
             transform: translate(-50%, -65%);
     }
+    @media screen 
+        and (width: 412px) {
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -65%);
+    }
+    @media not all 
+        and (min-height: 800px) {
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -65%);
+    }
+
 }
+
+
 

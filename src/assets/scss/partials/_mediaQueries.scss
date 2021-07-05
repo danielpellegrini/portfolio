@@ -1,92 +1,123 @@
 .holoContainer {
-
-    @media screen and (max-width: 992px) {
-        width: 90%;
-        height: 40%;
+    @media all and (min-width: 300px) and (max-width: 374px) {
+      width: 80%;
+      height: 80%;  
     }
-    // @media screen and (max-height: 900px) {
-    //     width: 90%;
-    //     height: 90%;
-    // }
-    @media screen and (max-width: 768px) {
-        width: 70%;
-        height: 50%;
-    }
-    // @media screen and (max-height: 768px) {
-    //     // width: 40%;
-    //     height: 23%;
-    //     top: 62%;
-    // }
-    @media screen and (max-width: 720px) {
-        width: 90%;
-        height: 60%;
-    }
-    @media screen and (max-width: 640px) {
+    @media all and (min-width: 375px) and (max-width: 480px) {
         width: 90%;
         height: 90%;
     }
-    // @media screen and (max-height: 640px) {
-    //     width: 90%;
-    //     height: 40%;
-    // }
-    @media screen and (max-width: 480px) {
-        width: 90%;
-        height: 100%;
+    @media all and (min-width: 481px) and (max-width: 768px) {
+      width: 70%;
+      height: 70%;  
     }
-    @media screen and (max-width: 375px) {
-        width: 95%;
-        height: 100%;       
-            
+    @media all and (min-width: 769px) and (max-width: 1024px) {
+      width: 90%;
+      height: 90%;  
     }
-    @media screen and (max-width: 320px) {
-        width: 95%;
-        height: 80%;
-            
+    @media all and (min-width: 1025px) and (max-width: 1200px) {
+      width: 90%;
+      height: 90%;  
     }
+    @media all and (min-width: 1201px) and (max-width: 1920px) {
+      width: 35%;
+      height: 30%;  
+    }
+    @media all and (min-width: 1921px) and (max-width: 2560px) {
+      width: 35%;
+      height: 32%;  
+    }
+    @media all and (min-width: 2561px) and (max-width: 3072px) {
+      width: 45%;
+      height: 45%;  
+    }
+    @media all and (min-width: 3073px) and (max-width: 3840px) {
+      width: 65%;
+      height: 60%;  
+    }
+    @media all and (min-width: 3840px) {
+      width: 90%;
+      height: 90%;  
+    }
+
 }
 
 .holoContainerLayover {
+    @media all and (min-width: 300px) and (max-width: 374px) {
+        width: 80%;
+        height: 80%;
+    }
+    @media all and (min-width: 375px) and (max-width: 480px) {
+        width: 90%;
+        height: 90%;
+    }
 
-    @media screen and (max-width: 992px) {
-        width: 90%;
-        height: 40%;
-    }
-    // @media screen and (max-height: 900px) {
-    //     width: 90%;
-    //     height: 90%;
-    // }
-    @media screen and (max-width: 768px) {
+    @media all and (min-width: 481px) and (max-width: 768px) {
         width: 70%;
-        height: 50%;
+        height: 70%;
     }
-    // @media screen and (max-height: 768px) {
-    //     height: 23%;
-    //     top: 62%;
-    // }
-    @media screen and (max-width: 720px) {
+
+    @media all and (min-width: 769px) and (max-width: 1024px) {
         width: 90%;
+        height: 90%;
+    }
+
+    @media all and (min-width: 1025px) and (max-width: 1200px) {
+        width: 90%;
+        height: 90%;
+    }
+
+    @media all and (min-width: 1201px) and (max-width: 1920px) {
+        width: 35%;
+        height: 30%;
+    }
+
+    @media all and (min-width: 1921px) and (max-width: 2560px) {
+        width: 35%;
+        height: 32%;
+    }
+
+    @media all and (min-width: 2561px) and (max-width: 3072px) {
+        width: 45%;
+        height: 45%;
+    }
+
+    @media all and (min-width: 3073px) and (max-width: 3840px) {
+        width: 65%;
         height: 60%;
     }
-    @media screen and (max-width: 640px) {
+
+    @media all and (min-width: 3840px) {
         width: 90%;
         height: 90%;
     }
-    // @media screen and (max-height: 640px) {
-    //     width: 90%;
-    //     height: 40%;
-    // }
-    @media screen and (max-width: 480px) {
-        width: 90%;
-        height: 90%;
+}
+.carousel-3d-container {
+    position: absolute !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .carousel-3d-slide {
+        background: none;
+        border: none;
     }
-    @media screen and (max-width: 375px) {
-        width: 95%;
-        height: 95%;
-        background-color: rgba(0, 0, 0, .2);
+
+    @media screen and (min-width: 300px) and (max-width: 374px) {
+        top: 45%;
+        left: 50%;
     }
-    @media screen and (max-width: 320px) {
-        width: 95%;
-        height: 80%;
-        background-color: rgba(0, 0, 0, .2);
+    @media all and (min-width: 375px) and (max-width: 480px) {
+        top: 37%;
+        left: 50%;    
     }
+    @media all and (min-width: 481px) and (max-width: 768px) {
+        top: 40%;
+        left: 50%;
+    }
+    @media all and (min-width: 769px) and (max-width: 1024px) {
+         top: 55%;
+         left: 50%;
+    }
+
 }

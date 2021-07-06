@@ -12,7 +12,7 @@
     </nav>
     
       <carousel-3d id="carousel" class="" ref="mycarousel" @after-slide-change="goToIndex" :space="500" :width="1900" :height="2800">
-        <slide :index="0" >
+        <slide :index="0">
           <About/>
         </slide>
         <slide :index="1">
@@ -41,7 +41,8 @@ export default {
         'Contacts'
       ],    
       linksIndex: 0,
-      active: true   
+      active: true, 
+      isActive: false,
     }
   },
   name: 'Home',
@@ -50,6 +51,17 @@ export default {
     Projects,
     Contacts,
     Welcome
+  },
+  mounted () {
+    // let isCurrent = document.querySelector('.current');
+    let isCurrent = document.getElementsByClassName("current")
+    
+      console.log(isCurrent)
+    
+    if (!isCurrent.classList.contains('current')) {
+      document.getElementById("projects").className = " ";
+    } 
+
   },
   methods: {
     goToIndex(index) {
@@ -69,14 +81,13 @@ export default {
         document.getElementById("welcome-container-bottom").className = "slide-in-bottom";
         document.getElementById("welcomeComponent").className = "view-welcome";
         document.getElementsByTagName("UL")[0].className = "d-none";
-        setTimeout(() => this.viewMore(), 1500);
+        setTimeout(() => this.viewMore(), 2000);
     },
     viewMore() {
       document.getElementById("more-container").className = "more-container";
       document.getElementById("welcome-container-top").className = " ";
       document.getElementById("welcome-container-bottom").className = " ";
-    },
-    
+    }    
   }
 }
 </script>

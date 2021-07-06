@@ -4,7 +4,9 @@
         <div id="expandContactsContainer" class="holoContainer">
             <div class="holo-top">
                 <h2 class="text-center">Contacts</h2>
-            </div>       
+            </div> 
+            <main id="contacts">
+            </main>      
               <i id="expandContacts" @click="expandContacts()" class="fas fa-expand-arrows-alt"></i>
               <i id="compressContacts" @click="compressContacts()" class=""></i>        
         </div>

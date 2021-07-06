@@ -9,12 +9,6 @@
     background-color: rgba(0, 0, 0, .5);
     transition: all 500ms;
 }
-.max-width {
-    width: 100% !important;
-    transition: all 500ms;
-    background-color: rgba(0, 0, 0, .6);
-}
-
 
 .holoContainer {
     position: absolute;
@@ -45,61 +39,16 @@
         h2 {
             line-height: 60px;
         }
-
     }
     main {
         display: flex;
-        justify-content: center;            
-
-        section {
-            margin: 30px 0;
-            width: 80%;
-            img {
-                border-radius: 10px;
-            }
-            .card {
-                border: none;
-                border-radius: 10px;
-                margin-bottom: 30px;
-            }
-            .card:first-child {
-                background-color: rgba(218, 219, 213, 1);
-                h5 {
-                    color: rgba(32, 155, 155, 1);
-                }
-
-                p {
-                    font-size: .8em;
-                    color: magenta;
-                }
-            }
-            .card:nth-child(2) {
-                background-color: rgba(29, 45, 60, .9);
-            }
-            .card:nth-child(3) {
-                background-color: rgba(21, 25, 34, .9);
-            }
-            .card:nth-child(4) {
-                background-color: rgba(255, 255, 255, .97);
-                h5 {
-                    color: rgba(32, 155, 155, 1);
-                }
-            }
-            .card:nth-child(5) {
-                background-color: rgba(255, 255, 255, .97);
-                h5 {
-                    color: rgba(32, 155, 155, 1);
-                }
-            }
-            h5 {
-                color: rgba(32, 255, 255, 1);
-            }
-            p {
-                font-size: .8em;
-                color: magenta;
-            }
-        }
     }
+    // ABOUT CARD
+    @import 'holoCards/_about.scss';
+    // PROJECTS CARD
+    @import 'holoCards/_projects.scss';
+    // CONTACTS CARD
+    @import 'holoCards/_contacts.scss';
 
 
 }
@@ -113,6 +62,13 @@ i {
     @media screen and (max-width: 768px) {
         display: none !important;
     }
+}
+.max-width {
+    width: 100% !important;
+    height: 96vh !important;
+    top: 49%;
+    transition: all 500ms;
+    background-color: rgba(0, 0, 0, .6);
 }
 
 

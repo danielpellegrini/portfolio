@@ -1,0 +1,84 @@
+#projects {
+    margin: 20px auto;
+    width: 85%;
+    img {
+        border-radius: 10px;
+    }
+    .card {
+        border: none;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        h5 {
+            font-weight: bold;
+        }
+        p {
+            font-size: .8em;
+            color: rgba(32, 155, 155, 1);
+        }
+    }
+
+    .card:first-child {
+        background-color: rgba(218, 219, 213, 1);
+
+        h5 {
+            color: rgb(0, 151, 136);
+        }
+        p {
+            color: black;
+        }
+    }
+
+    .card:nth-child(2) {
+        background-color: rgba(29, 45, 60, .9);
+        h5 {
+            color: red;
+        }
+        p {
+            color: white;
+        }
+    }
+
+    .card:nth-child(3) {
+        background-color: rgba(21, 25, 34, .9);
+        h5 {
+            color: white;
+        }
+        p {
+            color:rgb(174, 255, 52);
+        }
+    }
+
+    .card:nth-child(4) {
+        background-color: rgba(255, 255, 255, .97);
+        h5 {
+           color: rgb(85, 79, 151);
+        }
+        p {
+            color: rgb(254, 100, 0);
+        }
+    }
+
+    .card:nth-child(5) {
+        background-color: rgba(1, 102, 255, .9);
+
+        h5 {
+            color: white;
+        }
+        p {
+            color: rgba(255,255,255, .7)
+        }
+    }
+}
+.increase-projects {
+
+    .card-body {
+        padding: 60px;
+    }
+    
+    h5 { 
+        font-size: 3em;
+    }
+    p {
+        font-size: 2em !important;
+    }
+}

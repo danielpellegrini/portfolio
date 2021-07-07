@@ -1,4 +1,6 @@
 #about {
+    height: 85%;
+    padding: 15px;
     h5 {
         color: rgba(32, 255, 255, 1);
     }
@@ -6,5 +8,13 @@
     p {
         font-size: 1em;
         color: rgba(32, 255, 255, 1);
+        transition: font-size 500ms;
+    }
+}
+.increase-about {
+
+    p {
+        font-size: 3em !important;
+        transition: font-size 500ms;
     }
 }

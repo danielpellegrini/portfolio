@@ -9,11 +9,14 @@
         border-radius: 10px;
         margin-bottom: 30px;
         h5 {
+            font-size: 1em;
             font-weight: bold;
+            transition: font-size 500ms;
         }
         p {
             font-size: .8em;
             color: rgba(32, 155, 155, 1);
+            transition: font-size 500ms;
         }
     }
 
@@ -76,9 +79,11 @@
     }
     
     h5 { 
-        font-size: 3em;
+        font-size: 3em !important;
+        transition: font-size 500ms !important;
     }
     p {
         font-size: 2em !important;
+        transition: font-size 500ms !important;
     }
 }

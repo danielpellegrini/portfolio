@@ -72,6 +72,9 @@
 
 <script>
 export default {
+  mounted() {
+    console.log(this.$parent.$parent.animationSpeed);
+  },
   methods: {
      expandProjects() {
       document.getElementById("expandProjectsLayover").className = "max-width holoContainerLayover";
@@ -79,6 +82,9 @@ export default {
       document.getElementById("projects").className = "increase-projects";
       document.getElementById("compressProjects").className = "fas fa-compress-arrows-alt";
       document.getElementById("expandProjects").className = " ";
+      document.getElementsByTagName("UL")[0].className = "hidden nav justify-content-center";
+      this.$parent.$parent.animationSpeed = 1000000000;
+      console.log(this.$parent.$parent.animationSpeed);
     },
     compressProjects() {
       document.getElementById("expandProjectsLayover").className = "holoContainerLayover";
@@ -86,6 +92,9 @@ export default {
       document.getElementById("projects").className = " ";
       document.getElementById("expandProjects").className = "fas fa-expand-arrows-alt";
       document.getElementById("compressProjects").className = " ";
+      document.getElementsByTagName("UL")[0].className = "visible nav justify-content-center";
+      this.$parent.$parent.animationSpeed = 500;
+      console.log(this.$parent.$parent.animationSpeed);
     },
   }
 }

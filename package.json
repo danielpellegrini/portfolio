@@ -12,6 +12,7 @@
     "bootstrap": "^4.6.0",
     "bootstrap-vue": "^2.21.2",
     "core-js": "^3.15.2",
+    "getplay": "^0.2.0",
     "vue": "^2.6.14",
     "vue-carousel-3d": "^1.0.1",
     "vue-scrollin": "^0.1.2"

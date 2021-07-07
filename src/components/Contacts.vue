@@ -21,12 +21,18 @@ export default {
       document.getElementById("expandContactsContainer").className = "max-width holoContainer";
       document.getElementById("compressContacts").className = "fas fa-compress-arrows-alt";
       document.getElementById("expandContacts").className = " ";
+      document.getElementsByTagName("UL")[0].className = "hidden nav justify-content-center";
+      this.$parent.$parent.animationSpeed = 1000000000;
+      console.log(this.$parent.$parent.animationSpeed);
     },
     compressContacts() {
       document.getElementById("expandContactsLayover").className = "holoContainerLayover";
       document.getElementById("expandContactsContainer").className = "holoContainer";
       document.getElementById("expandContacts").className = "fas fa-expand-arrows-alt";
       document.getElementById("compressContacts").className = " ";
+      document.getElementsByTagName("UL")[0].className = "visible nav justify-content-center";
+      this.$parent.$parent.animationSpeed = 500;
+      console.log(this.$parent.$parent.animationSpeed);
     }
   },
 }

@@ -6,61 +6,93 @@
                 <h2 class="text-center">Projects</h2>
             </div>
             <main>
-              <div id="projects" >
-                <div class="card">
-                  <img src="../assets/img/whatsappweb.jpg" class="card-img-top" alt="whatsapp image">
-                  <div class="card-body">
-                    <h5 class="card-title">WhatsApp Web (clone)</h5>
-                    <p class="card-text">Technologies used:</p>
-                    <p class="card-text">- HTML5</p>
-                    <p class="card-text">- CSS</p>
-                    <p class="card-text">- Javascript (VueJs).</p>
-                    <a href="https://danielpellegrini.github.io/js-html-css-boolzap/" class="btn btn-primary">View</a>
+              <div id="projects">
+                <div class="row-container first-row">  
+
+                  <!-- FIRST ROW -->
+                  <div class="card column-3-with-offset column-3-with-offset">
+                    <a href="https://danielpellegrini.github.io/js-html-css-boolzap/" target="blank"><img src="../assets/img/whatsappweb.jpg" class="card-img-top" alt="whatsapp image"></a>
+                    <div class="card-body">
+                      <div>
+                        <h5 class="card-title">WhatsApp Web (clone)</h5>
+                        <p class="card-text">Technologies used:</p>
+                        <p class="card-text">- HTML5</p>
+                        <p class="card-text">- CSS</p>
+                        <p class="card-text">- Javascript (VueJs).</p>
+                      </div>
+                      <div>
+                        <a href="https://danielpellegrini.github.io/js-html-css-boolzap/" target="blank" class="btn">View</a>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="card">
-                  <img src="../assets/img/netflix.jpg" class="card-img-top" alt="netflix image">
-                  <div class="card-body">
-                    <h5 class="card-title">Netflix (clone)</h5>
-                    <p class="card-text">Technologies used:</p>
-                    <p class="card-text">- HTML5</p>
-                    <p class="card-text">- CSS</p>
-                    <p class="card-text">- Javascript (VueJs)</p>
-                    <p class="card-text">- API call to TMDB</p>
-                    <a href="https://danielpellegrini.github.io/vue-boolflix/" class="btn btn-primary">View</a>
-                  </div>
-                </div>
-                <div class="card">
-                  <img src="../assets/img/spotify.jpg" class="card-img-top" alt="spotify image">
-                  <div class="card-body">
-                    <h5 class="card-title">Spotify Web (clone)</h5>
-                    <p class="card-text">Technologies used:</p>
-                    <p class="card-text">- HTML5</p>
-                    <p class="card-text">- CSS</p>
-                    <a href="https://danielpellegrini.github.io/html-css-spotifyweb/" class="btn btn-primary">View</a>
-                  </div>
-                </div>
-                <div class="card">
-                  <img src="../assets/img/fable.jpg" class="card-img-top" alt="spotify image">
-                  <div class="card-body">
-                    <h5 class="card-title">Fable Kindergarten</h5>
-                    <p class="card-text">Technologies used:</p>
-                      <p class="card-text">- PHP</p>
+
+                  <div class="card column-3-with-offset">
+                    <a href="https://danielpellegrini.github.io/vue-boolflix/" target="blank"><img src="../assets/img/netflix.jpg" class="card-img-top" alt="netflix image"></a>
+                    <div class="card-body">
+                    <div>
+                      <h5 class="card-title">Netflix (clone)</h5>
+                      <p class="card-text">Technologies used:</p>
                       <p class="card-text">- HTML5</p>
-                    <p class="card-text">- CSS</p>
-                    <a href="https://fable-kindergarten.herokuapp.com/" class="btn btn-primary">View</a>
+                      <p class="card-text">- CSS</p>
+                      <p class="card-text">- Javascript (VueJs)</p>
+                      <p class="card-text">- API call to TMDB</p>
+                    </div>
+                      <div>
+                        <a href="https://danielpellegrini.github.io/vue-boolflix/" target="blank" class="btn">View</a>
+                      </div>
+                    </div>
                   </div>
+
+                  <div class="card column-3-with-offset">
+                    <a href="https://danielpellegrini.github.io/html-css-spotifyweb/" target="blank"><img src="../assets/img/spotify.jpg" class="card-img-top" alt="spotify image"></a>
+                    <div class="card-body">
+                    <div>
+                      <h5 class="card-title">Spotify Web (clone)</h5>
+                      <p class="card-text">Technologies used:</p>
+                      <p class="card-text">- HTML5</p>
+                      <p class="card-text">- CSS</p>
+                    </div>
+                      <div>
+                        <a href="https://danielpellegrini.github.io/html-css-spotifyweb/" target="blank" class="btn">View</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- SECOND ROW -->
+                  <div class="row-container second-row">
+                    <div class="card column-3-with-offset">
+                      <a href="https://fable-kindergarten.herokuapp.com/" target="blank"><img src="../assets/img/fable.jpg" class="card-img-top" alt="spotify image"></a>
+                      <div class="card-body">
+                        <div>
+                          <h5 class="card-title">Fable Kindergarten</h5>
+                          <p class="card-text">Technologies used:</p>
+                            <p class="card-text">- PHP</p>
+                            <p class="card-text">- HTML5</p>
+                          <p class="card-text">- CSS</p>
+                        </div>
+                        <div>
+                          <a href="https://fable-kindergarten.herokuapp.com/" target="blank" class="btn">View</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card column-3-with-offset">
+                      <a href="https://danielpellegrini.github.io/html-css-digitalocean/" target="blank"><img src="../assets/img/digitalocean.jpg" class="card-img-top" alt="spotify image"></a>
+                      <div class="card-body">
+                      <div>
+                        <h5 class="card-title">Digital Ocean (clone)</h5>
+                        <p class="card-text">Technologies used:</p>
+                        <p class="card-text">- HTML5</p>
+                        <p class="card-text">- CSS</p>
+                      </div>
+                        <div>
+                          <a href="https://danielpellegrini.github.io/html-css-digitalocean/" target="blank" class="btn">View</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>   
                 </div>
-                <div class="card">
-                  <img src="../assets/img/digitalocean.jpg" class="card-img-top" alt="spotify image">
-                  <div class="card-body">
-                    <h5 class="card-title">Digital Ocean (clone)</h5>
-                    <p class="card-text">Technologies used:</p>
-                    <p class="card-text">- HTML5</p>
-                    <p class="card-text">- CSS</p>
-                    <a href="https://danielpellegrini.github.io/html-css-digitalocean/" class="btn btn-primary">View</a>
-                  </div>
-                </div>                
+                
               </div>                              
             </main>
 
@@ -72,9 +104,9 @@
 
 <script>
 export default {
-  mounted() {
-    console.log(this.$parent.$parent.animationSpeed);
-  },
+  // mounted() {
+  //   console.log(this.$parent.$parent.animationSpeed);
+  // },
   methods: {
      expandProjects() {
       document.getElementById("expandProjectsLayover").className = "max-width holoContainerLayover";
@@ -84,7 +116,6 @@ export default {
       document.getElementById("expandProjects").className = " ";
       document.getElementsByTagName("UL")[0].className = "hidden nav justify-content-center";
       this.$parent.$parent.animationSpeed = 1000000000;
-      console.log(this.$parent.$parent.animationSpeed);
     },
     compressProjects() {
       document.getElementById("expandProjectsLayover").className = "holoContainerLayover";
@@ -94,7 +125,6 @@ export default {
       document.getElementById("compressProjects").className = " ";
       document.getElementsByTagName("UL")[0].className = "visible nav justify-content-center";
       this.$parent.$parent.animationSpeed = 500;
-      console.log(this.$parent.$parent.animationSpeed);
     },
   }
 }

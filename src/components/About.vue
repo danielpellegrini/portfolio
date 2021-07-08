@@ -29,7 +29,6 @@ export default {
       document.getElementById("expandAbout").className = " ";
       document.getElementsByTagName("UL")[0].className = "hidden nav justify-content-center";
       this.$parent.$parent.animationSpeed = 1000000000;
-      console.log(this.$parent.$parent.animationSpeed);
     },
     compressAbout() {
       document.getElementById("expandAboutLayover").className = "holoContainerLayover";
@@ -39,7 +38,6 @@ export default {
       document.getElementById("compressAbout").className = " ";
       document.getElementsByTagName("UL")[0].className = "visible nav justify-content-center";
       this.$parent.$parent.animationSpeed = 500;
-      console.log(this.$parent.$parent.animationSpeed);
     }
   },
 }

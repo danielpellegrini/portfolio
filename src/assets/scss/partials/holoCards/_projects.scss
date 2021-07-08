@@ -1,89 +1,166 @@
 #projects {
-    margin: 20px auto;
+
+    margin: 30px auto;
     width: 85%;
+    
     img {
         border-radius: 10px;
+        cursor: pointer;
     }
+
     .card {
+        .card-body {
+            display: flex;
+            flex-direction: column !important;
+            justify-content: space-between !important;
+            h5 {
+                font-size: 1.7em;
+                font-weight: bold;
+            }
+
+            p {
+                font-size: 1.2em;
+            }
+
+            div:first-child {
+                margin-bottom: 30px;
+            }
+            div:nth-child(2) {
+                margin: 0 auto;
+                a {
+                    border: 0;
+                    width: 200px;
+                }
+            }
+        }
+
         border: none;
         border-radius: 10px;
         margin-bottom: 30px;
-        h5 {
-            font-size: 1em;
-            font-weight: bold;
-            transition: font-size 500ms;
+
+
+    }
+
+    .first-row {
+        .card:first-child {
+            background-color: rgba(218, 219, 213, 1);
+
+            h5 {
+                color: rgb(0, 151, 136);
+            }
+            p {
+                color: black;
+            }
+            a {
+                background-color: rgba(0, 151, 136, .7);
+                color:white;
+            }
+            a:hover {
+                background-color: rgb(0, 151, 136);
+                color: black;
+            }
         }
-        p {
-            font-size: .8em;
-            color: rgba(32, 155, 155, 1);
-            transition: font-size 500ms;
+        .card:nth-child(2) {
+            background-color: rgba(29, 45, 60, .9);
+            h5 {
+                color: red;
+            }
+            p {
+                color: white;
+            }
+            a {
+                background-color: red;
+            }
+            a:hover {
+                background-color: white;
+                color: red;
+            }
+        }
+        .card:nth-child(3) {
+            background-color: rgba(21, 25, 34, .9);
+            h5 {
+                color: white;
+            }
+            p {
+                color:rgb(174, 255, 52);
+            }
+            a {
+                background-color: rgb(174, 255, 52);
+                color: black;
+            }
+            a:hover {
+                background-color: white;
+                color: black;
+            }
         }
     }
 
-    .card:first-child {
-        background-color: rgba(218, 219, 213, 1);
-
-        h5 {
-            color: rgb(0, 151, 136);
+    .second-row {
+        .card:first-child {
+            background-color: rgba(255, 255, 255, .97);
+            h5 {
+               color: rgb(85, 79, 151);
+            }
+            p {
+                color: rgb(254, 100, 0);
+            }
+            a {
+                background-color: rgb(85, 79, 151);
+                color: white;
+            }
+            a:hover {
+                background-color: rgb(254, 100, 0);
+                color: white;               
+            }
+            
+        }    
+        .card:nth-child(2) {
+            background-color: rgba(1, 102, 255, .9);
+    
+            h5 {
+                color: white;
+            }
+            p {
+                color: rgba(255,255,255, .7);
+            }
+            a {
+                background-color: rgba(255, 255, 255, .9);
+                color: rgb(1, 102, 255);
+            }
+            a:hover {
+                background-color: white;
+                color: rgb(1, 102, 255);
+            }
+            
         }
-        p {
-            color: black;
-        }
-    }
-
-    .card:nth-child(2) {
-        background-color: rgba(29, 45, 60, .9);
-        h5 {
-            color: red;
-        }
-        p {
-            color: white;
-        }
-    }
-
-    .card:nth-child(3) {
-        background-color: rgba(21, 25, 34, .9);
-        h5 {
-            color: white;
-        }
-        p {
-            color:rgb(174, 255, 52);
-        }
-    }
-
-    .card:nth-child(4) {
-        background-color: rgba(255, 255, 255, .97);
-        h5 {
-           color: rgb(85, 79, 151);
-        }
-        p {
-            color: rgb(254, 100, 0);
-        }
-    }
-
-    .card:nth-child(5) {
-        background-color: rgba(1, 102, 255, .9);
-
-        h5 {
-            color: white;
-        }
-        p {
-            color: rgba(255,255,255, .7)
-        }
-    }
-}
-.increase-projects {
-
-    .card-body {
-        padding: 60px;
     }
     
-    h5 { 
-        font-size: 3em !important;
-        transition: font-size 500ms !important;
-    }
-    p {
-        font-size: 2em !important;
-        transition: font-size 500ms !important;
+
+
+}
+
+// when increasing width
+.increase-projects {
+
+    .row-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -10px;
+        margin-left: -10px;
+        
+        .card {
+            transition: all 500ms;
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+            transition: all 500ms;
+        }
+
+        .column-3-with-offset {
+            margin-left: 8.333333%;
+            flex: 0 0 25%;
+            max-width: 25%;
+        }
     }
 }

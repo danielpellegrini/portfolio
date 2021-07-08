@@ -11,7 +11,7 @@
       </b-nav>
     </nav>
     
-      <carousel-3d id="carousel" class="" ref="mycarousel" @after-slide-change="goToIndex"  :count="navlinks.length" :space="500" :width="1900" :height="2800">
+      <carousel-3d id="carousel" class="d-none" ref="mycarousel" @after-slide-change="goToIndex"  :count="navlinks.length" :space="500" :width="1900" :height="2800">
         <slide :index="0">
           <About/>
         </slide>
@@ -56,40 +56,7 @@ export default {
     Carousel3d,
     Slide
   },
-  mounted() {
-    //  this.$refs.mycarousel.forEach(element => {
-      //  console.log(this.$refs.mycarousel.count);
-    //  });
-  },
   methods: {
-    // onChange() {
-    //   this.$refs.mycarousel.$children.forEach(element => {
-    //     if (element.computedClasses.current === false) {
-    //       //about
-    //       document.getElementById("expandAboutLayover").className = "holoContainerLayover";
-    //       document.getElementById("expandAboutContainer").className = "holoContainer";
-    //       document.getElementById("expandAbout").className = "fas fa-expand-arrows-alt";
-    //       document.getElementById("compressAbout").className = " ";
-    //       //projects
-    //       document.getElementById("expandProjectsLayover").className = "holoContainerLayover";
-    //       document.getElementById("expandProjectsContainer").className = "holoContainer";
-    //       document.getElementById("projects").className = " ";
-    //       document.getElementById("expandProjects").className = "fas fa-expand-arrows-alt";
-    //       document.getElementById("compressProjects").className = " ";
-    //       //contacts
-    //       document.getElementById("expandContactsLayover").className = "holoContainerLayover";
-    //       document.getElementById("expandContactsContainer").className = "holoContainer";
-    //       document.getElementById("expandContacts").className = "fas fa-expand-arrows-alt";
-    //       document.getElementById("compressContacts").className = " ";
-    //       //nav items
-    //       document.getElementsByTagName("UL")[0].className = "visible nav justify-content-center";          
-    //     } 
-        // console.log(element.computedClasses.current)
-    // });
-    // },
-  //  expandSlide() {
-  //   this.$refs.mycarousel.count = 1;
-  //  },
    goToIndex(i) {
       this.$refs.mycarousel.goSlide(i)
       this.linksIndex = i

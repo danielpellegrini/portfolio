@@ -15,10 +15,10 @@
                     <div class="card-body">
                       <div>
                         <h5 class="card-title">WhatsApp Web (clone)</h5>
-                        <p class="card-text">Technologies used:</p>
-                        <p class="card-text">- HTML5</p>
-                        <p class="card-text">- CSS</p>
-                        <p class="card-text">- Javascript (VueJs).</p>
+                        <h6 class="card-text">Technologies used:</h6>
+                        <p class="card-text"><span class="fab fa-html5"></span></p>
+                        <p class="card-text"><span class="fab fa-css3-alt"></span></p>
+                        <p class="card-text"><span class="fab fa-js-square"> / <span class="fab fa-vuejs"></span></span></p>
                       </div>
                       <div>
                         <a href="https://danielpellegrini.github.io/js-html-css-boolzap/" target="blank" class="btn">View</a>
@@ -31,11 +31,11 @@
                     <div class="card-body">
                     <div>
                       <h5 class="card-title">Netflix (clone)</h5>
-                      <p class="card-text">Technologies used:</p>
-                      <p class="card-text">- HTML5</p>
-                      <p class="card-text">- CSS</p>
-                      <p class="card-text">- Javascript (VueJs)</p>
-                      <p class="card-text">- API call to TMDB</p>
+                      <h6 class="card-text">Technologies used:</h6>
+                      <p class="card-text"><span class="fab fa-html5"></span></p>
+                      <p class="card-text"><span class="fab fa-css3-alt"></span></p>
+                      <p class="card-text"><span class="fab fa-js-square"> / <span class="fab fa-vuejs"></span></span></p>
+                      <h6 class="card-text">AJAX call to TMDB</h6>
                     </div>
                       <div>
                         <a href="https://danielpellegrini.github.io/vue-boolflix/" target="blank" class="btn">View</a>
@@ -48,9 +48,9 @@
                     <div class="card-body">
                     <div>
                       <h5 class="card-title">Spotify Web (clone)</h5>
-                      <p class="card-text">Technologies used:</p>
-                      <p class="card-text">- HTML5</p>
-                      <p class="card-text">- CSS</p>
+                      <h6 class="card-text">Technologies used:</h6>
+                      <p class="card-text"><span class="fab fa-html5"></span></p>
+                      <p class="card-text"><span class="fab fa-css3-alt"></span></p>
                     </div>
                       <div>
                         <a href="https://danielpellegrini.github.io/html-css-spotifyweb/" target="blank" class="btn">View</a>
@@ -65,10 +65,11 @@
                       <div class="card-body">
                         <div>
                           <h5 class="card-title">Fable Kindergarten</h5>
-                          <p class="card-text">Technologies used:</p>
-                            <p class="card-text">- PHP</p>
-                            <p class="card-text">- HTML5</p>
-                          <p class="card-text">- CSS</p>
+                          <h6 class="card-text">Technologies used:</h6>
+                          <p class="card-text"><span class="fab fa-html5"></span></p>
+                          <p class="card-text"><span class="fab fa-css3-alt"></span></p>
+                          <p class="card-text"><span class="fab fa-php"></span></p>
+                          <p class="card-text"><span class="fab fa-js-square"></span> (Jquery)</p>
                         </div>
                         <div>
                           <a href="https://fable-kindergarten.herokuapp.com/" target="blank" class="btn">View</a>
@@ -81,9 +82,9 @@
                       <div class="card-body">
                       <div>
                         <h5 class="card-title">Digital Ocean (clone)</h5>
-                        <p class="card-text">Technologies used:</p>
-                        <p class="card-text">- HTML5</p>
-                        <p class="card-text">- CSS</p>
+                        <h6 class="card-text">Technologies used:</h6>
+                        <p class="card-text"><span class="fab fa-html5"></span></p>
+                        <p class="card-text"><span class="fab fa-css3-alt"></span></p>
                       </div>
                         <div>
                           <a href="https://danielpellegrini.github.io/html-css-digitalocean/" target="blank" class="btn">View</a>

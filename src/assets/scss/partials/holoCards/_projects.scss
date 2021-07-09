@@ -18,8 +18,11 @@
                 font-weight: bold;
             }
 
-            p {
+            h6 {
                 font-size: 1.2em;
+            }
+            p {
+                font-size: 2em;
             }
 
             div:first-child {
@@ -48,6 +51,7 @@
             h5 {
                 color: rgb(0, 151, 136);
             }
+            h6,
             p {
                 color: black;
             }
@@ -65,6 +69,7 @@
             h5 {
                 color: red;
             }
+            h6,
             p {
                 color: white;
             }
@@ -81,6 +86,7 @@
             h5 {
                 color: white;
             }
+            h6,
             p {
                 color:rgb(174, 255, 52);
             }
@@ -101,6 +107,7 @@
             h5 {
                color: rgb(85, 79, 151);
             }
+            h6,
             p {
                 color: rgb(254, 100, 0);
             }
@@ -120,6 +127,7 @@
             h5 {
                 color: white;
             }
+            h6,
             p {
                 color: rgba(255,255,255, .7);
             }

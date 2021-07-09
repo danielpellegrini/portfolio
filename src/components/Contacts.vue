@@ -3,35 +3,42 @@
         <div id="expandContactsLayover" class="holoContainerLayover"></div>
         <div id="expandContactsContainer" class="holoContainer">
             <div class="holo-top">
-                <h2 class="text-center">Contacts</h2>
+                <h2 class="text-center">Contacts</h2> 
             </div> 
             <main id="contacts">
-            </main>      
-              <i id="expandContacts" @click="expandContacts()" class="fas fa-expand-arrows-alt"></i>
-              <i id="compressContacts" @click="compressContacts()" class=""></i>        
+              <h1>Have a question or want to work togheter?</h1>
+              <h1>Let's get in touch!</h1>
+              <div class="icons-container">
+                <div @mouseover="isGithub = true" @mouseout="isGithub = false" :class="{rotate: isGithub}">
+                  <a href="https://github.com/danielpellegrini" target="blank">
+                    <span class="fab fa-github"></span>
+                  </a>
+                </div>
+                <div @mouseover="isLinkedin = true" @mouseout="isLinkedin = false" :class="{rotate: isLinkedin}">
+                  <a href="https://linkedin.com/in/daniel-pellegrini-38655571" target="blank">
+                   <span class="fab fa-linkedin"></span>
+                  </a>
+                </div>
+                <div @mouseover="isEmail = true" @mouseout="isEmail = false" :class="{rotate: isEmail}">
+                  <a href="mailto:danielpellegrini87@gmail.com" target="blank">
+                    <span class="far fa-envelope"></span>
+                  </a>
+                </div>
+              </div>
+            </main>              
         </div>
     </div>
 </template>
 
 <script>
 export default {
-  methods: {
-     expandContacts() {
-      document.getElementById("expandContactsLayover").className = "max-width holoContainerLayover";
-      document.getElementById("expandContactsContainer").className = "max-width holoContainer";
-      document.getElementById("compressContacts").className = "fas fa-compress-arrows-alt";
-      document.getElementById("expandContacts").className = " ";
-      document.getElementsByTagName("UL")[0].className = "hidden nav justify-content-center";
-      this.$parent.$parent.animationSpeed = 1000000000;
-    },
-    compressContacts() {
-      document.getElementById("expandContactsLayover").className = "holoContainerLayover";
-      document.getElementById("expandContactsContainer").className = "holoContainer";
-      document.getElementById("expandContacts").className = "fas fa-expand-arrows-alt";
-      document.getElementById("compressContacts").className = " ";
-      document.getElementsByTagName("UL")[0].className = "visible nav justify-content-center";
-      this.$parent.$parent.animationSpeed = 500;
+  data() {
+    return {
+      isGithub: false,
+      isLinkedin: false,
+      isEmail: false
+
     }
-  },
+  }
 }
 </script>

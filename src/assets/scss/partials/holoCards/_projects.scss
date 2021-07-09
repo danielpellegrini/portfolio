@@ -1,5 +1,4 @@
 #projects {
-
     margin: 30px auto;
     width: 85%;
     
@@ -30,7 +29,7 @@
             }
             div:nth-child(2) {
                 margin: 0 auto;
-                a {
+                .btn {
                     border: 0;
                     width: 200px;
                 }
@@ -55,11 +54,11 @@
             p {
                 color: black;
             }
-            a {
+            .btn {
                 background-color: rgba(0, 151, 136, .7);
                 color:white;
             }
-            a:hover {
+            .btn:hover {
                 background-color: rgb(0, 151, 136);
                 color: black;
             }
@@ -73,10 +72,10 @@
             p {
                 color: white;
             }
-            a {
+            .btn {
                 background-color: red;
             }
-            a:hover {
+            .btn:hover {
                 background-color: white;
                 color: red;
             }
@@ -90,11 +89,11 @@
             p {
                 color:rgb(174, 255, 52);
             }
-            a {
+            .btn {
                 background-color: rgb(174, 255, 52);
                 color: black;
             }
-            a:hover {
+            .btn:hover {
                 background-color: white;
                 color: black;
             }
@@ -111,11 +110,11 @@
             p {
                 color: rgb(254, 100, 0);
             }
-            a {
+            .btn {
                 background-color: rgb(85, 79, 151);
                 color: white;
             }
-            a:hover {
+            .btn:hover {
                 background-color: rgb(254, 100, 0);
                 color: white;               
             }
@@ -131,11 +130,11 @@
             p {
                 color: rgba(255,255,255, .7);
             }
-            a {
+            .btn {
                 background-color: rgba(255, 255, 255, .9);
                 color: rgb(1, 102, 255);
             }
-            a:hover {
+            .btn:hover {
                 background-color: white;
                 color: rgb(1, 102, 255);
             }

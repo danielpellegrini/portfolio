@@ -69,7 +69,7 @@
                           <p class="card-text"><span class="fab fa-html5"></span></p>
                           <p class="card-text"><span class="fab fa-css3-alt"></span></p>
                           <p class="card-text"><span class="fab fa-php"></span></p>
-                          <p class="card-text"><span class="fab fa-js-square"></span> (Jquery)</p>
+                          <p class="card-text"><span class="fab fa-js-square"></span><small> jQuery</small></p>
                         </div>
                         <div>
                           <a href="https://fable-kindergarten.herokuapp.com/" target="blank" class="btn">View</a>

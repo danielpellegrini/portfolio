@@ -25,7 +25,7 @@
                   </a>
                 </div>
               </div>
-            </main>              
+            </main>        
         </div>
     </div>
 </template>

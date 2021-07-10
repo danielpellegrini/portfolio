@@ -1,10 +1,13 @@
 #about {
     margin: 0 45px;
     height: 85%;
+    width: auto;
     padding: 15px;
     transition: all 500ms;
     line-height: 2em;
     margin-bottom: 20%;
+    
+
     h5 {
         color: rgba(32, 255, 255, 1);
     }
@@ -13,6 +16,7 @@
         font-size: 1em;
         color: rgba(32, 255, 255, 1);
         transition: font-size 500ms;
+        text-align: justify;
     }
 
     a {

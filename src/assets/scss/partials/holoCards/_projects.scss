@@ -8,6 +8,9 @@
     }
 
     .card {
+        border: none;
+        border-radius: 10px;
+        margin-bottom: 30px;
         .card-body {
             display: flex;
             flex-direction: column !important;
@@ -22,6 +25,7 @@
             }
             p {
                 font-size: 2em;
+                margin-bottom: 0;
             }
 
             div:first-child {
@@ -35,11 +39,6 @@
                 }
             }
         }
-
-        border: none;
-        border-radius: 10px;
-        margin-bottom: 30px;
-
 
     }
 

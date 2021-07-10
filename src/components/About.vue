@@ -7,8 +7,6 @@
             </div>
 
             <main id="about">
-              <div class="label-wrap">
-              </div>
                 <p id="paragraph">
                 </p>                
             </main>

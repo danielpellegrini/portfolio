@@ -128,3 +128,31 @@
     }
   }
 }
+
+
+#contacts {
+  @media all and (min-width: 300px) and (max-width: 400px) {
+    padding: 10px;
+    height: 75% !important;
+    .fab,
+    .far {
+      font-size: 2em !important;
+    }
+     h1 {
+       font-size: 1em;
+     }
+
+     h1:nth-child(2) {
+       margin-top: -50px !important;
+     }
+  }
+
+  @media all and (min-width: 375px) and (max-width: 768px) {
+   h1 {
+     font-size: 2em;
+   }
+    h1:nth-child(2) {
+      margin-top: 0 !important;
+    }
+  }
+}

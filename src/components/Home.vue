@@ -11,17 +11,26 @@
       </b-nav>
     </nav>
     
-      <carousel-3d id="carousel" class="d-none" ref="mycarousel" @after-slide-change="goToIndex"  :count="navlinks.length" :space="500" :width="1900" :height="2800">
-        <slide :index="0">
-          <About/>
-        </slide>
-        <slide :index="1">
-          <Projects/>
-        </slide>
-        <slide :index="2">
-          <Contacts/>
-        </slide>
-      </carousel-3d>     
+    <carousel-3d id="carousel" class="d-none" ref="mycarousel" @after-slide-change="goToIndex"  :count="navlinks.length" :space="500" :width="1900" :height="2800">
+      <slide :index="0">
+        <About/>
+      </slide>
+      <slide :index="1">
+        <Projects/>
+      </slide>
+      <slide :index="2">
+        <Contacts/>
+      </slide>
+    </carousel-3d>  
+
+    <footer id="footer">
+      <h5>DANIEL PELLEGRINI
+        <span>
+          <span class="far fa-copyright"></span>
+            2021
+        </span>
+      </h5>
+    </footer> 
 
   </div>  
 </template>

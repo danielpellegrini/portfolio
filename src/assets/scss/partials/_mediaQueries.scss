@@ -129,9 +129,8 @@
   }
 }
 
-
 #contacts {
-  @media all and (min-width: 300px) and (max-width: 400px) {
+  @media all and (min-width: 300px) and (max-width: 374px) {
     padding: 10px;
     height: 75% !important;
     .fab,
@@ -154,5 +153,15 @@
     h1:nth-child(2) {
       margin-top: 0 !important;
     }
+  }
+}
+
+#footer {
+  @media all and (min-width: 300px) and (max-width: 374px) {
+    font-size: .5em;
+  }
+
+  @media all and (min-width: 375px) and (max-width: 768px) { 
+    font-size: .8em;
   }
 }

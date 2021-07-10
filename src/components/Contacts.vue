@@ -6,7 +6,7 @@
                 <h2 class="text-center">Contacts</h2> 
             </div> 
             <main id="contacts">
-              <h1>Have a question or want to work togheter?</h1>
+              <h1>Have a question or want to work together?</h1>
               <h1>Let's get in touch!</h1>
               <div class="icons-container">
                 <div @mouseover="isGithub = true" @mouseout="isGithub = false" :class="{rotate: isGithub}">

@@ -11,7 +11,7 @@
 
                   <!-- FIRST ROW -->
                   <div class="card column-3-with-offset column-3-with-offset">
-                    <a href="https://danielpellegrini.github.io/js-html-css-boolzap/" target="blank"><img src="../assets/img/whatsappweb.jpg" class="card-img-top" alt="whatsapp image"></a>
+                    <a href="https://danielpellegrini.github.io/js-html-css-boolzap/" target="blank"><img src="../assets/img/whatsappweb.jpg" class="card-img-top" alt="whatsapp web clone image"></a>
                     <div class="card-body">
                       <div>
                         <h5 class="card-title">WhatsApp Web (clone)</h5>
@@ -27,7 +27,7 @@
                   </div>
 
                   <div class="card column-3-with-offset">
-                    <a href="https://danielpellegrini.github.io/vue-boolflix/" target="blank"><img src="../assets/img/netflix.jpg" class="card-img-top" alt="netflix image"></a>
+                    <a href="https://danielpellegrini.github.io/vue-boolflix/" target="blank"><img src="../assets/img/netflix.jpg" class="card-img-top" alt="netflix clone image"></a>
                     <div class="card-body">
                     <div>
                       <h5 class="card-title">Netflix (clone)</h5>
@@ -44,7 +44,7 @@
                   </div>
 
                   <div class="card column-3-with-offset">
-                    <a href="https://danielpellegrini.github.io/html-css-spotifyweb/" target="blank"><img src="../assets/img/spotify.jpg" class="card-img-top" alt="spotify image"></a>
+                    <a href="https://danielpellegrini.github.io/html-css-spotifyweb/" target="blank"><img src="../assets/img/spotify.jpg" class="card-img-top" alt="spotify web clone image"></a>
                     <div class="card-body">
                     <div>
                       <h5 class="card-title">Spotify Web (clone)</h5>
@@ -61,7 +61,7 @@
                   <!-- SECOND ROW -->
                   <div class="row-container second-row">
                     <div class="card column-3-with-offset">
-                      <a href="https://fable-kindergarten.herokuapp.com/" target="blank"><img src="../assets/img/fable.jpg" class="card-img-top" alt="spotify image"></a>
+                      <a href="https://fable-kindergarten.herokuapp.com/" target="blank"><img src="../assets/img/fable.jpg" class="card-img-top" alt="fable kindergarten image"></a>
                       <div class="card-body">
                         <div>
                           <h5 class="card-title">Fable Kindergarten</h5>
@@ -78,7 +78,7 @@
                     </div>
 
                     <div class="card column-3-with-offset">
-                      <a href="https://danielpellegrini.github.io/html-css-digitalocean/" target="blank"><img src="../assets/img/digitalocean.jpg" class="card-img-top" alt="spotify image"></a>
+                      <a href="https://danielpellegrini.github.io/html-css-digitalocean/" target="blank"><img src="../assets/img/digitalocean.jpg" class="card-img-top" alt="digital ocean clone image"></a>
                       <div class="card-body">
                       <div>
                         <h5 class="card-title">Digital Ocean (clone)</h5>

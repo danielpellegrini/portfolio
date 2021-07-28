@@ -29,7 +29,7 @@ export default {
     const image = document.createElement('img');
     image.setAttribute('src', "https://cdn.iconscout.com/icon/free/png-512/mysql-19-1174939.png");
     document.getElementById('fa-mysql').appendChild(image);
-    console.log(result);
+    console.log('This website has been made with ❤ with VueJs.');
   },
   methods: {
      expandAbout() {

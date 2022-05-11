@@ -2,7 +2,7 @@ module.exports = {
     pluginOptions: {
         sitemap: {
             urls: [
-                'https://danielpellegrini-webdev.me'
+                'https://danielpellegrini.github.io/portfolio/'
             ]
         }
     }

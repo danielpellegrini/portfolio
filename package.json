@@ -16,21 +16,22 @@
     "bootstrap-vue": "^2.21.2",
     "core-js": "^3.15.2",
     "getplay": "^0.2.0",
+    "sass": "^1.51.0",
+    "sass-loader": "^12.6.0",
     "vue": "^2.6.14",
     "vue-carousel-3d": "^1.0.1",
     "vue-scrollin": "^0.1.2"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^6.2.2",
-    "node-sass": "^5.0.0",
-    "sass-loader": "^10.2.0",
-    "vue-cli-plugin-sitemap": "~2.3.0",
-    "vue-loader": "^15.9.7",
+    "@babel/core": "^7.12.10",
+    "@babel/eslint-parser": "^7.12.1",
+    "@vue/cli-plugin-babel": "~5.0.0-alpha.7",
+    "@vue/cli-plugin-eslint": "~5.0.0-alpha.7",
+    "@vue/cli-plugin-router": "~5.0.0-alpha.7",
+    "@vue/cli-service": "~5.0.0-alpha.7",
+    "@vue/compiler-sfc": "^3.0.7",
+    "eslint": "^7.22.0",
+    "eslint-plugin-vue": "^7.8.0",
     "vue-template-compiler": "^2.6.14"
   },
   "eslintConfig": {
@@ -43,7 +44,7 @@
       "eslint:recommended"
     ],
     "parserOptions": {
-      "parser": "babel-eslint"
+      "parser": "@babel/eslint-parser"
     },
     "rules": {}
   },

@@ -27,7 +27,7 @@
       <h5>DANIEL PELLEGRINI
         <span>
           <span class="far fa-copyright"></span>
-            2021
+            {{new Date().getFullYear()+100}}
         </span>
       </h5>
     </footer> 
@@ -89,8 +89,7 @@ export default {
       document.getElementById("more-container").className = "more-container";
       document.getElementById("welcome-container-top").className = " ";
       document.getElementById("welcome-container-bottom").className = " ";
-    },
-  
+    }
   },
 
 }

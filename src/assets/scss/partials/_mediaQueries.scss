@@ -8,11 +8,11 @@
         width: 90%;
         height: 100%;
     }
-    @media all and (min-width: 481px) and (max-width: 768px) {
+    @media all and (min-width: 481px) and (max-width: 700px) {
       width: 70%;
       height: 70%;  
     }
-    @media all and (min-width: 769px) and (max-width: 1024px) {
+    @media all and (min-width: 701px) and (max-width: 1024px) {
       width: 90%;
       height: 90%;  
     }
@@ -20,9 +20,13 @@
       width: 90%;
       height: 90%;  
     }
-    @media all and (min-width: 1201px) and (max-width: 1920px) {
-      width: 35%;
+    @media all and (min-width: 1201px) and (max-width: 1440px) {
+      width: 30%;
       height: 27%;  
+    }
+    @media all and (min-width: 1441px) and (max-width: 1920px) {
+      width: 35%;
+      height: 33%;  
     }
     @media all and (min-width: 1921px) and (max-width: 2560px) {
       width: 35%;
@@ -64,12 +68,12 @@
         left: 50%;  
         perspective: 400px;  
     }
-    @media all and (min-width: 481px) and (max-width: 768px) {
+    @media all and (min-width: 481px) and (max-width: 700px) {
         top: 40%;
         left: 50%;
         perspective: 600px;
     }
-    @media all and (min-width: 769px) and (max-width: 1024px) {
+    @media all and (min-width: 701px) and (max-width: 1024px) {
          top: 55%;
          left: 50%;
         perspective: 800px;
@@ -102,7 +106,7 @@
     }
   }
 
-  @media all and (min-width: 481px) and (max-width: 768px) {
+  @media all and (min-width: 481px) and (max-width: 700px) {
     margin: 0px 15px !important;
     height: 85%;
     padding: 10px !important;
@@ -115,7 +119,7 @@
     }
   }
 
-  @media all and (min-width: 769px) and (max-width: 1024px) {
+  @media all and (min-width: 701px) and (max-width: 1024px) {
     margin: 0px 15px !important;
     height: 85%;
     padding: 10px !important;
@@ -146,9 +150,9 @@
      }
   }
 
-  @media all and (min-width: 375px) and (max-width: 768px) {
+  @media all and (min-width: 375px) and (max-width: 700px) {
    h1 {
-     font-size: 2em;
+     font-size: 1.8em;
    }
     h1:nth-child(2) {
       margin-top: 0 !important;
@@ -161,7 +165,7 @@
     font-size: .5em;
   }
 
-  @media all and (min-width: 375px) and (max-width: 768px) { 
+  @media all and (min-width: 375px) and (max-width: 700px) { 
     font-size: .8em;
   }
 }

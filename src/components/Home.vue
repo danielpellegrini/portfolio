@@ -24,10 +24,10 @@
     </carousel-3d>  
 
     <footer id="footer">
-      <h5>DANIEL PELLEGRINI
-        <span>
-          <span class="far fa-copyright"></span>
-            {{new Date().getFullYear()+100}}
+      <h5>DANIEL PELLEGRINI 
+        <span> 
+          <span class="far fa-copyright"> </span>
+            {{new Date().getFullYear()}}
         </span>
       </h5>
     </footer> 

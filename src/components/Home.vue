@@ -1,43 +1,49 @@
 <template>
   <div class="main-container">
-    <Welcome/>
+    <Welcome />
 
-    <nav id="navbar" class="layover">      
-      <b-nav align="center" >
+    <nav id="navbar" class="layover">
+      <b-nav align="center">
         <b-nav-item @click="viewWelcome">Home</b-nav-item>
-        <b-nav-item v-for="(link, index) in navlinks" :key="link" @click="goToIndex(index)" :class="(activeIndex(index))">
+        <b-nav-item v-for="(link, index) in navlinks" :key="link" @click="goToIndex(index)"
+          :class="(activeIndex(index))">
           {{link}}
         </b-nav-item>
       </b-nav>
     </nav>
-    
-    <carousel-3d id="carousel" class="d-none" ref="mycarousel" @after-slide-change="goToIndex"  :count="navlinks.length" :space="500" :width="1900" :height="2800">
+
+    <carousel-3d id="carousel" class="d-none" ref="mycarousel" @after-slide-change="goToIndex" :count="navlinks.length"
+      :space="500" :width="1900" :height="2800">
       <slide :index="0">
-        <About/>
+        <About />
       </slide>
       <slide :index="1">
-        <Projects/>
+        <Projects />
       </slide>
       <slide :index="2">
-        <Contacts/>
+        <References />
       </slide>
-    </carousel-3d>  
+      <slide :index="3">
+        <Contacts />
+      </slide>
+    </carousel-3d>
 
     <footer id="footer">
-      <h5>DANIEL PELLEGRINI 
-        <span> 
+      <h5>DANIEL PELLEGRINI
+        <span>
           <span class="far fa-copyright"> </span>
-            {{new Date().getFullYear()}}
+          {{new Date().getFullYear()}}
         </span>
       </h5>
-    </footer> 
+    </footer>
 
-  </div>  
+  </div>
 </template>
 
 <script>
 import About from './About'
 import Projects from './Projects'
+import References from './References'
 import Contacts from './Contacts'
 import Welcome from './Welcome'
 import { Carousel3d, Slide } from 'vue-carousel-3d';
@@ -49,7 +55,8 @@ export default {
       navlinks: [
         'About',
         'Projects',
-        'Contacts',
+        'References',
+        'Contacts'
       ],    
       linksIndex: 0,
       active: true, 
@@ -60,6 +67,7 @@ export default {
   components: {
     About,
     Projects,
+    References,
     Contacts,
     Welcome,
     Carousel3d,

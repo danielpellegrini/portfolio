@@ -105,9 +105,9 @@
 
 <script>
 export default {
-  // mounted() {
-  //   console.log(this.$parent.$parent.animationSpeed);
-  // },
+  mounted() {
+    // console.log(this.$parent.$parent);
+  },
   methods: {
      expandProjects() {
       document.getElementById("expandProjectsLayover").className = "max-width holoContainerLayover";

@@ -1,3 +1,10 @@
+#carousel {
+    .left-2 {
+        transform: translateX(0px) translateZ(-1070px) rotateY(0deg) !important;
+        opacity: 0.6 !important;
+    }
+}
+
 .holoContainerLayover {
     position: absolute;
     top: 50%;

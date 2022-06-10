@@ -1,5 +1,7 @@
 # vue-portfolio
 
+https://danielpellegrini.github.io/portfolio/
+
 ## Project setup
 ```
 npm install

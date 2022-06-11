@@ -57,13 +57,16 @@
     }
     a:hover {
       color: magenta;
-      font-size: 1em;
+      font-size: .7em;
       transition: 300ms;
+    }
+    .nav-link {
+      padding: 0.5rem 0.5rem;
     }
   } 
   .highlight {
     a {
-      font-size: 1.3em;
+      font-size: .7em;
     }
   }
 }  
@@ -78,13 +81,13 @@
     }
     a:hover {
       color: magenta;
-      font-size: .8em;
+      font-size: .6em;
       transition: 300ms;
     }
   }  
   .highlight {
     a {
-      font-size: 1em;
+      font-size: .6em;
     }
   }
 }
@@ -98,13 +101,13 @@
     }
     a:hover {
       color: magenta;
-      font-size: .7em;
+      font-size: .5em;
       transition: 300ms;
     }
   } 
   .highlight {
     a {
-      font-size: .7em;
+      font-size: .5em;
     }
   }
 }
